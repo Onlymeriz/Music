@@ -377,8 +377,8 @@ async def play(_, message: Message):
   ┗ ❒ **{BOT_NAME}**
 """,    
             reply_markup=InlineKeyboardMarkup(buttons),
-            disable_web_page_preview=True,
         )  
+        disable_web_page_preview=True
         return   
     if await is_active_chat(chat_id):
         position = await put(chat_id, file=file)

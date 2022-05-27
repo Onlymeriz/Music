@@ -375,7 +375,7 @@ async def play(_, message: Message):
 ⁵ <b>{title5[:65]}</b>
   ┣ ❒ [Tools](https://t.me/{BOT_USERNAME}?start=info_{ID1})
   ┗ ❒ **{BOT_NAME}**
-"""),    
+""",    
             reply_markup=InlineKeyboardMarkup(buttons),
         )  
         disable_web_page_preview=True

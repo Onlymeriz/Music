@@ -124,6 +124,7 @@ async def play(_, message: Message):
 
 """,
             parse_mode="markdown",
+            disable_web_page_preview=True,
             reply_markup=pstart_markup,
             reply_to_message_id=message.message_id,
         )

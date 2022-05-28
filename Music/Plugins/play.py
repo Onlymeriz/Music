@@ -317,7 +317,7 @@ async def play(_, message: Message):
             what = "Command"
             await LOG_CHAT(message, what)
             user_name = message.from_user.first_name
-            thumb ="cache/IMG_20220304_005450_670.jpg"
+            thumb ="cache/IMG_20211115_231128_845.jpg"
             buttons = playlist_markup(user_name, user_id)
             hmo = await message.reply_photo(
             photo=thumb, 
@@ -349,12 +349,12 @@ async def play(_, message: Message):
             ID5 = (result[4]["id"])
         except Exception as e:
             return await mystic.edit_text(f"❌ 𝐋𝐚𝐠𝐮 𝐓𝐢𝐝𝐚𝐤 𝐃𝐢𝐭𝐞𝐦𝐮𝐤𝐚𝐧.\n**𝐌𝐮𝐧𝐠𝐤𝐢𝐧 𝐊𝐚𝐫𝐞𝐧𝐚 𝐀𝐥𝐞𝐬𝐚𝐧:**{e}")
-        thumb ="cache/IMG_20220304_005450_670.jpg"
+        thumb ="cache/IMG_20211115_231128_845.jpg"
         await mystic.delete()   
         buttons = search_markup(ID1, ID2, ID3, ID4, ID5, duration1, duration2, duration3, duration4, duration5, user_id, query)
         hmo = await message.reply_text(
             f"""
-**🏷 Silahkan Pilih Lagu Yang Ingin Di Putar 👀**
+**🏷 Silahkan Pilih Lagu Yang Ingin Anda Putar 👀**
 
 ¹ <b>{title1[:65]}</b>
   ┣ ❒ [Tools](https://t.me/{BOT_USERNAME}?start=info_{ID1})
@@ -662,7 +662,7 @@ async def popat(_,CallbackQuery):
         buttons = search_markup2(ID6, ID7, ID8, ID9, ID10, duration6, duration7, duration8, duration9, duration10 ,user_id, query)
         await CallbackQuery.edit_message_text(
             f"""
-<b>**🏷 Silahkan Pilih Lagu Yang Ingin Di Putar 👀**</b>
+<b>**🏷 Silahkan Pilih Lagu Yang Ingin Anda Putar 👀**</b>
 
 ⁶ <b>{title6[:60]}</b>
   ┣ ❒ [Tools](https://t.me/{BOT_USERNAME}?start=info_{ID1})
@@ -692,7 +692,7 @@ async def popat(_,CallbackQuery):
         buttons = search_markup(ID1, ID2, ID3, ID4, ID5, duration1, duration2, duration3, duration4, duration5, user_id, query)
         await CallbackQuery.edit_message_text(
             f"""
-<b>**🏷 Silahkan Pilih Lagu Yang Ingin Di Putar 👀**</b>
+<b>**🏷 Silahkan Pilih Lagu Yang Ingin Anda Putar 👀**</b>
 
 ¹ <b>{title1[:60]}</b>
   ┣ ❒ [Tools](https://t.me/{BOT_USERNAME}?start=info_{ID1})
@@ -721,7 +721,7 @@ async def popat(_,CallbackQuery):
         
 @app.on_message(filters.command("playplaylist"))
 async def play_playlist_cmd(_, message):
-    thumb ="cache/IMG_20211201_214925_953.jpg"
+    thumb ="cache/IMG_20211115_231128_845.jpg"
     user_id = message.from_user.id
     user_name = message.from_user.first_name
     buttons = playlist_markup(user_name, user_id)

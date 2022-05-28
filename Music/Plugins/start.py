@@ -118,9 +118,14 @@ async def play(_, message: Message):
         await app.send_message(
             message.chat.id,
             text=f"""
-**✨ sᴇʟᴀᴍᴀᴛ ᴅᴀᴛᴀɴɢ {rpk}!
+**✨ Halo, Nama saya {rpk}!
 
-💬 [{BOT_NAME}](t.me/{BOT_USERNAME}) ᴍᴇᴍᴜɴɢᴋɪɴᴋᴀɴ ᴀɴᴅᴀ ᴜɴᴛᴜᴋ ᴍᴇᴍᴜᴛᴀʀ ᴍᴜsɪᴋ ᴘᴀᴅᴀ ɢʀᴜᴘ ᴍᴇʟᴀʟᴜɪ ᴏʙʀᴏʟᴀɴ sᴜᴀʀᴀ ʏᴀɴɢ ʙᴀʀᴜ ᴅɪ ᴛᴇʟᴇɢʀᴀᴍ**
+💬 Saya Adala [{BOT_NAME}](t.me/{BOT_USERNAME}) Group Manager / Music Voice Chat Dengan Fitur Yang Sangat Menarik.
+➖➖➖➖➖➖➖➖➖➖➖➖➖
+• Version 7.9 Last
+• Fell Free Add To Your Group
+➖➖➖➖➖➖➖➖➖➖➖➖➖
+➛ Tekan Tombol Command Untuk Mengetahui Fitur Menarik Dari Turbo Robot**
 
 """,
             parse_mode="markdown",

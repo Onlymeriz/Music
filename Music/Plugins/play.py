@@ -470,7 +470,7 @@ async def startyuplay(_,CallbackQuery):
     if duration == "None":
         return await CallbackQuery.message.reply_text(f"❌ **𝐌𝐚𝐚𝐟, 𝐕𝐢𝐝𝐞𝐨 𝐋𝐚𝐧𝐠𝐬𝐮𝐧𝐠 𝐭𝐢𝐝𝐚𝐤 𝐝𝐢𝐝𝐮𝐤𝐮𝐧𝐠**")      
     if CallbackQuery.from_user.id != int(user_id):
-        return await CallbackQuery.answer("❌ **𝐈𝐧𝐢 𝐛𝐮𝐤𝐚𝐧 𝐮𝐧𝐭𝐮𝐤𝐦𝐮 𝐂𝐚𝐫𝐢 𝐋𝐚𝐠𝐮 𝐌𝐢𝐥𝐢𝐤 𝐀𝐧𝐝𝐚**", show_alert=True)
+        return await CallbackQuery.answer("❌ 𝐈𝐧𝐢 𝐛𝐮𝐤𝐚𝐧 𝐮𝐧𝐭𝐮𝐤𝐦𝐮 𝐂𝐚𝐫𝐢 𝐋𝐚𝐠𝐮 𝐌𝐢𝐥𝐢𝐤 𝐀𝐧𝐝𝐚", show_alert=True)
     await CallbackQuery.message.delete()
     checking = f"[{CallbackQuery.from_user.first_name}](tg://user?id={userid})"
     url = (f"https://www.youtube.com/watch?v={id}")
@@ -620,7 +620,7 @@ async def popat(_,CallbackQuery):
     except Exception as e:
         return await CallbackQuery.message.edit(f"❌ 𝐓𝐞𝐫𝐣𝐚𝐝𝐢 𝐤𝐞𝐬𝐚𝐥𝐚𝐡𝐚𝐧\n**𝐊𝐞𝐦𝐮𝐧𝐠𝐤𝐢𝐧𝐚𝐧 𝐚𝐥𝐚𝐬𝐚𝐧𝐧𝐲𝐚 𝐛𝐢𝐬𝐚**:{e}")       
     if CallbackQuery.from_user.id != int(user_id):
-        return await CallbackQuery.answer("❌ **𝐈𝐧𝐢 𝐛𝐮𝐤𝐚𝐧 𝐮𝐧𝐭𝐮𝐤𝐦𝐮 𝐂𝐚𝐫𝐢 𝐋𝐚𝐠𝐮 𝐌𝐢𝐥𝐢𝐤 𝐀𝐧𝐝𝐚**", show_alert=True)
+        return await CallbackQuery.answer("❌ 𝐈𝐧𝐢 𝐛𝐮𝐤𝐚𝐧 𝐮𝐧𝐭𝐮𝐤𝐦𝐮 𝐂𝐚𝐫𝐢 𝐋𝐚𝐠𝐮 𝐌𝐢𝐥𝐢𝐤 𝐀𝐧𝐝𝐚", show_alert=True)
     i=int(id)
     query = str(query)
     try:

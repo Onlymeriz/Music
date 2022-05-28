@@ -352,7 +352,9 @@ async def play(_, message: Message):
         thumb ="cache/IMG_20211115_231128_845.jpg"
         await mystic.delete()   
         buttons = search_markup(ID1, ID2, ID3, ID4, ID5, duration1, duration2, duration3, duration4, duration5, user_id, query)
-        hmo = await message.reply_text(
+        hmo = await message.reply_photo(
+            photo=thumb, 
+            caption=(
             f"""
 **🏷 Silahkan Pilih Lagu Yang Ingin Anda Putar 👀**
 

@@ -353,8 +353,6 @@ async def play(_, message: Message):
         await mystic.delete()   
         buttons = search_markup(ID1, ID2, ID3, ID4, ID5, duration1, duration2, duration3, duration4, duration5, user_id, query)
         hmo = await message.reply_photo(
-            photo=thumb, 
-            caption=(
             f"""
 **🏷 sɪʟᴀʜᴋᴀɴ ᴘɪʟɪʜ ʟᴀɢᴜ ʏᴀɴɢ ɪɴɢɪɴ ᴀɴᴅᴀ ᴘᴜᴛᴀʀ 👀**
 
@@ -377,10 +375,10 @@ async def play(_, message: Message):
 ⁵ <b>{title5[:65]}</b>
   ┣ ❒ [Tools](https://t.me/{BOT_USERNAME}?start=info_{ID1})
   ┗ ❒ **{BOT_NAME}**
-"""),    
+""",    
             reply_markup=InlineKeyboardMarkup(buttons),
+            disable_web_page_preview=True,
         )  
-        disable_web_page_preview=True
         return   
     if await is_active_chat(chat_id):
         position = await put(chat_id, file=file)
@@ -687,8 +685,8 @@ async def popat(_,CallbackQuery):
    ┗ ❒ **{BOT_NAME}**
 """, 
             reply_markup=InlineKeyboardMarkup(buttons),
-        )  
-        disable_web_page_preview=True
+            disable_web_page_preview=True,
+        )
         return    
     if i == 2:
         buttons = search_markup(ID1, ID2, ID3, ID4, ID5, duration1, duration2, duration3, duration4, duration5, user_id, query)
@@ -717,8 +715,8 @@ async def popat(_,CallbackQuery):
   ┗ ❒ **{BOT_NAME}**
 """,    
             reply_markup=InlineKeyboardMarkup(buttons),
+            disable_web_page_preview=True,
         )  
-        disable_web_page_preview=True
         return    
         
 @app.on_message(filters.command("playplaylist"))

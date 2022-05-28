@@ -228,7 +228,7 @@ async def play(_, message: Message):
             else file_name,
         )
         title = "Selected Audio from Telegram"
-        link = "https://t.me/hiroshimabes"
+        link = "https://t.me/bombleebas"
         thumb = "cache/audioplay.jpg"
         videoid = "smex1"
     elif url:
@@ -356,7 +356,7 @@ async def play(_, message: Message):
             photo=thumb, 
             caption=(
             f"""
-**🏷 Silahkan Pilih Lagu Yang Ingin Anda Putar 👀**
+**🏷 sɪʟᴀʜᴋᴀɴ ᴘɪʟɪʜ ʟᴀɢᴜ ʏᴀɴɢ ɪɴɢɪɴ ᴀɴᴅᴀ ᴘᴜᴛᴀʀ 👀**
 
 ¹ <b>{title1[:65]}</b>
   ┣ ❒ [Tools](https://t.me/{BOT_USERNAME}?start=info_{ID1})
@@ -664,7 +664,7 @@ async def popat(_,CallbackQuery):
         buttons = search_markup2(ID6, ID7, ID8, ID9, ID10, duration6, duration7, duration8, duration9, duration10 ,user_id, query)
         await CallbackQuery.edit_message_text(
             f"""
-<b>**🏷 Silahkan Pilih Lagu Yang Ingin Anda Putar 👀**</b>
+<b>**🏷 sɪʟᴀʜᴋᴀɴ ᴘɪʟɪʜ ʟᴀɢᴜ ʏᴀɴɢ ɪɴɢɪɴ ᴀɴᴅᴀ ᴘᴜᴛᴀʀ 👀**</b>
 
 ⁶ <b>{title6[:60]}</b>
   ┣ ❒ [Tools](https://t.me/{BOT_USERNAME}?start=info_{ID1})
@@ -694,7 +694,7 @@ async def popat(_,CallbackQuery):
         buttons = search_markup(ID1, ID2, ID3, ID4, ID5, duration1, duration2, duration3, duration4, duration5, user_id, query)
         await CallbackQuery.edit_message_text(
             f"""
-<b>**🏷 Silahkan Pilih Lagu Yang Ingin Anda Putar 👀**</b>
+<b>**🏷 sɪʟᴀʜᴋᴀɴ ᴘɪʟɪʜ ʟᴀɢᴜ ʏᴀɴɢ ɪɴɢɪɴ ᴀɴᴅᴀ ᴘᴜᴛᴀʀ 👀**</b>
 
 ¹ <b>{title1[:60]}</b>
   ┣ ❒ [Tools](https://t.me/{BOT_USERNAME}?start=info_{ID1})

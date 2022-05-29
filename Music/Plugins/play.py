@@ -354,27 +354,27 @@ async def play(_, message: Message):
         buttons = search_markup(ID1, ID2, ID3, ID4, ID5, duration1, duration2, duration3, duration4, duration5, user_id, query)
         hmo = await message.reply_text(
             f"""
-**🏷 sɪʟᴀʜᴋᴀɴ ᴘɪʟɪʜ ʟᴀɢᴜ ʏᴀɴɢ ɪɴɢɪɴ ᴀɴᴅᴀ ᴘᴜᴛᴀʀ 👀**
+**❓SILAHKAN PILIH LAGU :**
 
 ¹ <b>{title1[:65]}</b>
-  ┣ ❒ [Tools](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗ ❒ **{BOT_NAME}**
+  ┣ ❒ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
+  ┗ ❒ __Powered by {BOT_NAME}__
 
 ² <b>{title2[:65]}</b>
-  ┣ ❒ [Tools](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗ ❒ **{BOT_NAME}**
+  ┣ ❒ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
+  ┗ ❒ __Powered by {BOT_NAME}__
 
 ³ <b>{title3[:65]}</b>
-  ┣ ❒ [Tools](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗ ❒ **{BOT_NAME}**
+  ┣ ❒ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
+  ┗ ❒ __Powered by {BOT_NAME}__
 
 ⁴ <b>{title4[:65]}</b>
-  ┣ ❒ [Tools](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗ ❒ **{BOT_NAME}**
+  ┣ ❒ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
+  ┗ ❒ __Powered by {BOT_NAME}__
 
 ⁵ <b>{title5[:65]}</b>
-  ┣ ❒ [Tools](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗ ❒ **{BOT_NAME}**
+  ┣ ❒ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
+  ┗ ❒ __Powered by {BOT_NAME}__
 """,    
             reply_markup=InlineKeyboardMarkup(buttons),
             disable_web_page_preview=True,
@@ -662,27 +662,27 @@ async def popat(_,CallbackQuery):
         buttons = search_markup2(ID6, ID7, ID8, ID9, ID10, duration6, duration7, duration8, duration9, duration10 ,user_id, query)
         await CallbackQuery.edit_message_text(
             f"""
-<b>**🏷 sɪʟᴀʜᴋᴀɴ ᴘɪʟɪʜ ʟᴀɢᴜ ʏᴀɴɢ ɪɴɢɪɴ ᴀɴᴅᴀ ᴘᴜᴛᴀʀ 👀**</b>
+<b>**❓SILAHKAN PILIH LAGU :**</b>
 
 ⁶ <b>{title6[:60]}</b>
-  ┣ ❒ [Tools](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗ ❒ **{BOT_NAME}**
+  ┣ ❒ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
+  ┗ ❒ __Powered by {BOT_NAME}__
 
 ⁷ <b>{title7[:60]}</b>
-  ┣ ❒ [Tools](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗ ❒ **{BOT_NAME}**
+  ┣ ❒ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
+  ┗ ❒ __Powered by {BOT_NAME}__
 
 ⁸ <b>{title8[:60]}</b>
-  ┣ ❒ [Tools](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗ ❒ **{BOT_NAME}**
+  ┣ ❒ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
+  ┗ ❒ __Powered by {BOT_NAME}__
 
 ⁹ <b>{title9[:60]}</b>
-  ┣ ❒ [Tools](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗ ❒ **{BOT_NAME}**
+  ┣ ❒ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
+  ┗ ❒ __Powered by {BOT_NAME}__
 
 ¹⁰ <b>{title10[:60]}</b>
-   ┣ ❒ [Tools](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-   ┗ ❒ **{BOT_NAME}**
+   ┣ ❒ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
+   ┗ ❒ __Powered by {BOT_NAME}__
 """, 
             reply_markup=InlineKeyboardMarkup(buttons),
             disable_web_page_preview=True,
@@ -692,27 +692,27 @@ async def popat(_,CallbackQuery):
         buttons = search_markup(ID1, ID2, ID3, ID4, ID5, duration1, duration2, duration3, duration4, duration5, user_id, query)
         await CallbackQuery.edit_message_text(
             f"""
-<b>**🏷 sɪʟᴀʜᴋᴀɴ ᴘɪʟɪʜ ʟᴀɢᴜ ʏᴀɴɢ ɪɴɢɪɴ ᴀɴᴅᴀ ᴘᴜᴛᴀʀ 👀**</b>
+<b>**❓SILAHKAN PILIH LAGU :**</b>
 
 ¹ <b>{title1[:60]}</b>
-  ┣ ❒ [Tools](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗ ❒ **{BOT_NAME}**
+  ┣ ❒ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
+  ┗ ❒ __Powered by {BOT_NAME}__
 
 ² <b>{title2[:60]}</b>
-  ┣ ❒ [Tools](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗ ❒ **{BOT_NAME}**
+  ┣ ❒ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
+  ┗ ❒ __Powered by {BOT_NAME}__
 
 ³ <b>{title3[:60]}</b>
-  ┣ ❒ [Tools](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗ ❒ **{BOT_NAME}**
+  ┣ ❒ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
+  ┗ ❒ __Powered by {BOT_NAME}__
 
 ⁴ <b>{title4[:60]}</b>
-  ┣ ❒ [Tools](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗ ❒ **{BOT_NAME}**
+  ┣ ❒ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
+  ┗ ❒ __Powered by {BOT_NAME}__
 
 ⁵ <b>{title5[:60]}</b>
-  ┣ ❒ [Tools](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗ ❒ **{BOT_NAME}**
+  ┣ ❒ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
+  ┗ ❒ __Powered by {BOT_NAME}__
 """,    
             reply_markup=InlineKeyboardMarkup(buttons),
             disable_web_page_preview=True,

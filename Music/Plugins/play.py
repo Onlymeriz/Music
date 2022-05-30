@@ -354,8 +354,6 @@ async def play(_, message: Message):
         buttons = search_markup(ID1, ID2, ID3, ID4, ID5, duration1, duration2, duration3, duration4, duration5, user_id, query)
         hmo = await message.reply_text(
             f"""
-**❓SILAHKAN PILIH LAGU :**
-
 ¹ <b>{title1[:65]}</b>
   ┣ ❒ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
   ┗ ❒ __Powered by {BOT_NAME}__
@@ -662,8 +660,6 @@ async def popat(_,CallbackQuery):
         buttons = search_markup2(ID6, ID7, ID8, ID9, ID10, duration6, duration7, duration8, duration9, duration10 ,user_id, query)
         await CallbackQuery.edit_message_text(
             f"""
-<b>**❓SILAHKAN PILIH LAGU :**</b>
-
 ⁶ <b>{title6[:60]}</b>
   ┣ ❒ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
   ┗ ❒ __Powered by {BOT_NAME}__
@@ -692,8 +688,6 @@ async def popat(_,CallbackQuery):
         buttons = search_markup(ID1, ID2, ID3, ID4, ID5, duration1, duration2, duration3, duration4, duration5, user_id, query)
         await CallbackQuery.edit_message_text(
             f"""
-<b>**❓SILAHKAN PILIH LAGU :**</b>
-
 ¹ <b>{title1[:60]}</b>
   ┣ ❒ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
   ┗ ❒ __Powered by {BOT_NAME}__

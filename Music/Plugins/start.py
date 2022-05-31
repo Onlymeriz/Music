@@ -25,8 +25,8 @@ from pyrogram.types import (
 def start_pannel():
     buttons = [
         [
-            InlineKeyboardButton("Support", url=f"https://t.me/gatchornihbos"),
-            InlineKeyboardButton("Updates", url=f"https://t.me/diarygatchor"),
+            InlineKeyboardButton("Support", url=f"https://t.me/hiroosupport"),
+            InlineKeyboardButton("Updates", url=f"https://t.me/hiroshimabes"),
         ],
     ]
     return (
@@ -42,12 +42,12 @@ pstart_markup = InlineKeyboardMarkup(
                 "÷ ᴛᴀᴍʙᴀʜᴋᴀɴ sᴀʏᴀ ᴋᴇ ɢʀᴏᴜᴘ ᴀɴᴅᴀ ÷", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
         ],
         [
-            InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/gatchornihbos"),
-            InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/diarygatchor"),
+            InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/hiroosupport"),
+            InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/hiroshimabes"),
         ],
         [
             InlineKeyboardButton( 
-                "ᴅᴇᴠᴇʟᴏᴘᴇʀ", url=f"https://t.me/pnyajoss"),
+                "ᴅᴇᴠᴇʟᴏᴘᴇʀ", url=f"https://t.me/Bisubiarenak"),
             InlineKeyboardButton("ᴄᴏᴍᴍᴀɴᴅ", url="https://telegra.ph/Turbo-05-28"),
         ],
     ]
@@ -120,7 +120,7 @@ async def play(_, message: Message):
             text=f"""
 **✨ Halo, Nama saya {rpk}!
 
-💬 Saya Adala [{BOT_NAME}](t.me/{BOT_USERNAME}) Group Manager / Music Voice Chat Dengan Fitur Yang Sangat Menarik.
+💬 Saya Adala [{BOT_NAME}](t.me/{BOT_USERNAME}) Group Music Voice Chat Dengan Fitur Yang Sangat Menarik
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 • Version 7.9 Last
 • Fell Free Add To Your Group

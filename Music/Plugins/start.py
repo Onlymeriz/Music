@@ -29,7 +29,7 @@ def start_pannel():
             InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/hiroshimabes"),
         ],
         [
-            InlineKeyboardButton("sᴛᴇɪɴɢ sᴇssɪᴏɴ ʙᴏᴛ ", url=f"https://t.me/Hirostringbot"),
+            InlineKeyboardButton("sᴛʀɪɴɢ sᴇssɪᴏɴ ʙᴏᴛ", url=f"https://t.me/Hirostringbot"),
         ],
     ]
     return (
@@ -54,7 +54,7 @@ pstart_markup = InlineKeyboardMarkup(
             InlineKeyboardButton("ᴄᴏᴍᴍᴀɴᴅ", url="https://telegra.ph/Turbo-05-28"),
         ],
         [
-            InlineKeyboardButton("sᴛᴇɪɴɢ sᴇssɪᴏɴ ʙᴏᴛ ", url=f"https://t.me/Hirostringbot"),
+            InlineKeyboardButton("sᴛʀɪɴɢ sᴇssɪᴏɴ ʙᴏᴛ", url=f"https://t.me/Hirostringbot"),
         ],
     ]
 )

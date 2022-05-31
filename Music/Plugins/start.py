@@ -50,6 +50,9 @@ pstart_markup = InlineKeyboardMarkup(
                 "ᴅᴇᴠᴇʟᴏᴘᴇʀ", url=f"https://t.me/Bisubiarenak"),
             InlineKeyboardButton("ᴄᴏᴍᴍᴀɴᴅ", url="https://telegra.ph/Turbo-05-28"),
         ],
+        [
+            InlineKeyboardButton("sᴛᴇɪɴɢ sᴇssɪᴏɴ ʙᴏᴛ ", url=f"https://t.me/Hirostringbot"),
+        ],
     ]
 )
      

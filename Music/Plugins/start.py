@@ -29,7 +29,7 @@ def start_pannel():
             InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/hiroshimabes"),
         ],
         [
-            InlineKeyboardButton("ᴄᴏᴍᴍᴀɴᴅ", url=f"https://telegra.ph/Turbo-05-28""),
+            InlineKeyboardButton("ᴄᴏᴍᴍᴀɴᴅ", url=f"https://telegra.ph/Turbo-05-28"),
         ],
     ]
     return (

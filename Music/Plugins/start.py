@@ -131,7 +131,7 @@ async def play(_, message: Message):
 • Version 7.9 Last
 • Fell Free Add To Your Group
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-➛ Tekan Tombol Command Untuk Mengetahui Fitur Menarik Dari Turbo Robot**
+➛ Tekan Tombol Command Untuk Mengetahui Fitur Menarik Dari [{BOT_NAME}](t.me/{BOT_USERNAME})**
 
 """,
             parse_mode="markdown",

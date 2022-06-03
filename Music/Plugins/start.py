@@ -25,11 +25,11 @@ from pyrogram.types import (
 def start_pannel():
     buttons = [
         [
-            InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/tuanmahkamah"),
-            InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/nathaellxx"),
+            InlineKeyboardButton("👥 Official Group", url=f"https://t.me/tegediskusirasa"),
+            InlineKeyboardButton("🎰 Official Channel", url=f"https://t.me/grzmusik"),
         ],
         [
-            InlineKeyboardButton("ᴄᴏᴍᴍᴀɴᴅ", url=f"https://telegra.ph/Turbo-05-28"),
+            InlineKeyboardButton("📖 Commands", url=f"https://telegra.ph/Turbo-05-28"),
         ],
     ]
     return (
@@ -42,19 +42,19 @@ pstart_markup = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(
-                "÷ ᴛᴀᴍʙᴀʜᴋᴀɴ sᴀʏᴀ ᴋᴇ ɢʀᴏᴜᴘ ᴀɴᴅᴀ ÷", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+                "➕ Add Me To You Group ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
         ],
         [
-            InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/tuanmahkamah"),
-            InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/nathaellxx"),
+            InlineKeyboardButton("👥 Official Group", url=f"https://t.me/tegediskusirasa"),
+            InlineKeyboardButton("🎰 Official Channel", url=f"https://t.me/grzmusik"),
         ],
         [
             InlineKeyboardButton( 
-                "ᴅᴇᴠᴇʟᴏᴘᴇʀ", url=f"https://t.me/xxllxxxx_x"),
-            InlineKeyboardButton("ᴄᴏᴍᴍᴀɴᴅ", url="https://telegra.ph/Turbo-05-28"),
+                "🤴 Developer", url=f"https://t.me/teleidgz"),
+            InlineKeyboardButton("📖 Commands", url="https://telegra.ph/Turbo-05-28"),
         ],
         [
-            InlineKeyboardButton("sᴛʀɪɴɢ sᴇssɪᴏɴ ʙᴏᴛ", url=f"https://t.me/Hirostringbot"),
+            InlineKeyboardButton("↪️ Support Group ↩️", url=f"https://t.me/hiroosupport"),
         ],
     ]
 )

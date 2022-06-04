@@ -25,8 +25,8 @@ from pyrogram.types import (
 def start_pannel():
     buttons = [
         [
-            InlineKeyboardButton("👥 Official Group", url=f"https://t.me/tegediskusirasa"),
-            InlineKeyboardButton("🎰 Official Channel", url=f"https://t.me/grzmusik"),
+            InlineKeyboardButton("👥 Official Group", url=f"https://t.me/hiroosupport"),
+            InlineKeyboardButton("🎰 Official Channel", url=f"https://t.me/hiroshimabes"),
         ],
         [
             InlineKeyboardButton("📖 Commands", url=f"https://telegra.ph/Turbo-05-28"),
@@ -45,16 +45,16 @@ pstart_markup = InlineKeyboardMarkup(
                 "➕ Add Me To You Group ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
         ],
         [
-            InlineKeyboardButton("👥 Official Group", url=f"https://t.me/tegediskusirasa"),
-            InlineKeyboardButton("🎰 Official Channel", url=f"https://t.me/grzmusik"),
+            InlineKeyboardButton("👥 Official Group", url=f"https://t.me/hiroosupport"),
+            InlineKeyboardButton("🎰 Official Channel", url=f"https://t.me/hiroshimabes"),
         ],
         [
             InlineKeyboardButton( 
-                "🤴 Developer", url=f"https://t.me/teleidgz"),
+                "🤴 Developer", url=f"https://t.me/xcarfaceall"),
             InlineKeyboardButton("📖 Commands", url="https://telegra.ph/Turbo-05-28"),
         ],
         [
-            InlineKeyboardButton("↪️ Support Group ↩️", url=f"https://t.me/hiroosupport"),
+            InlineKeyboardButton("↪️ Support Group ↩️", url=f"https://t.me/privateical"),
         ],
     ]
 )
@@ -68,23 +68,23 @@ async def welcome(_, message: Message):
     for member in message.new_chat_members:
         try:
             if member.id in OWNER:
-                return await message.reply_text(
-                    f"💡 ᴘᴇᴍɪʟɪᴋ ʙᴏᴛ [{member.mention}] ʙᴀʀᴜ sᴀᴊᴀ ʙᴇʀɢᴀʙᴜɴɢ ᴅɪ ɢʀᴜᴘ ɪɴɪ"
+                return await message.reply_text( 
+                    f"💡 Developer Bot [{member.mention}] Baru Saja Bergabung Di Group Ini"
                 )
-            if member.id in SUDOERS:
+            if member.id in SUDOERS: 
                 return await message.reply_text(
-                    f"💡 ᴀᴅᴍɪɴ ʙᴏᴛ [{member.mention}] ʙᴀʀᴜ sᴀᴊᴀ ʙᴇʀɢᴀʙᴜɴɢ ᴅɪ ɢʀᴜᴘ ɪɴɪ"
+                    f"💡 Admin Bot [{member.mention}] Baru Saja Bergabung Di Group Ini"
                 )
             if member.id == ASSID:
-                await remove_active_chat(chat_id)
+                await remove_active_chat(chat_id) 
             if member.id == BOT_ID:
                 out = start_pannel()
                 await message.reply_text(
                     f"""
-👋 ** ʜᴀʟᴏ sᴇɴᴀɴɢ ʀᴀsᴀɴʏᴀ ʙɪsᴀ ʙᴇʀɢᴀʙᴜɴɢ ᴅɪ ɢʀᴜᴘ ɪɴɪ**
+👋 **Hallo Senang Rasanya Bisa Bergabung Di Group Ini**
 
-💡 **ᴊᴀɴɢᴀɴ ʟᴜᴘᴀ ᴜɴᴛᴜᴋ ᴍᴇɴᴊᴀᴅɪᴋᴀɴ sᴀʏᴀ sᴇʙᴀɢᴀɪ ᴀᴅᴍɪɴ ᴅɪ ɢʀᴜᴘ ɪɴɪ**
-""",
+💡 **Jangan Lupa Untuk Menjadikan Saya Sebagai Admin Di Group Ini**
+""", 
                     reply_markup=InlineKeyboardMarkup(out[1]),
                     disable_web_page_preview=True
                 )
@@ -104,11 +104,11 @@ async def start(_, message: Message):
     out = start_pannel()
     await message.reply_text(
         f"""
-ᴛᴇʀɪᴍᴀ ᴋᴀsɪʜ ᴛᴇʟᴀʜ ᴍᴇᴍᴀsᴜᴋᴋᴀɴ sᴀʏᴀ ᴅɪ {message.chat.title}.
-ᴍᴜsɪᴋ ɪᴛᴜ ʜɪᴅᴜᴘ.
+Terimakasih Telah Memasukkan Saya Di Group {message.chat.title}.
+Music Telah Online. 
 
-ᴜɴᴛᴜᴋ ʙᴀɴᴛᴜᴀɴ sɪʟᴀʜᴋᴀɴ ᴋʟɪᴋ ᴛᴏᴍʙᴏʟ ᴅɪʙᴀᴡᴀʜ.
-""",
+Untuk Bantuan Silahkan Klik Tombol Dibawah ⬇
+""", 
         reply_markup=InlineKeyboardMarkup(out[1]),
         disable_web_page_preview=True
     )

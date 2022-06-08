@@ -1,6 +1,7 @@
 aiohttp
 aiofiles
 asyncio
+APScheduler==3.8.1
 ffmpeg-python
 pillow
 pyrogram==1.4.16

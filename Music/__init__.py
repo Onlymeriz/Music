@@ -93,6 +93,9 @@ def all_info(app, client):
 def init_db():
     global db_mem
     db_mem = {}
+
+
+init_db()
     
 
     

@@ -60,7 +60,7 @@ ASSUSERNAME = ""
 ASSMENTION = ""
 print("[INFO]: INITIALIZING BOT CLIENT")
 app = Client(
-    'MusicBot',
+    "MusicBot",
     API_ID,
     API_HASH,
     bot_token=BOT_TOKEN,
@@ -68,6 +68,7 @@ app = Client(
 aiohttpsession = ClientSession()
 
 client = Client(config.SESSION_NAME, config.API_ID, config.API_HASH)
+
 
 def all_info(app, client):
     global BOT_ID, BOT_NAME, BOT_USERNAME
@@ -88,6 +89,10 @@ def all_info(app, client):
     )
     ASSUSERNAME = getme1.username
     ASSMENTION = getme1.mention
+    
+def init_db():
+    global db_mem
+    db_mem = {}
     
 
     

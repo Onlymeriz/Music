@@ -5,10 +5,10 @@ API_HASH=a4ccc51331a895285a4c57ce10d49f95
 SUDO_USERS=1924938458 314180533 1884623464 1139515427 1879112683
 OWNER_ID=314180533
 DURATION_LIMIT=540000
-MONGO_DB_URI=mongodb+srv://musichalal:musichalal@cluster0.q8cdv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+MONGO_DB_URI=mongodb+srv://Musicirsan:Vanostra@cluster0.hwxx8.mongodb.net/?retryWrites=true&w=majority
 LOG_GROUP_ID=-1001840094518
 ASS_ID=1924938458
-BOT_NAME=нιяσѕнι ꭙ ꝛσʙσᴛ
+BOT_NAME=hiroshi robot
 CHANNEL=vailedcode
 GROUP=hiroxsupport
 MUST_JOIN=@vailedcode

@@ -11,4 +11,4 @@ ASS_ID=1924938458
 BOT_NAME=hiroshi robot
 CHANNEL=vailedcode
 GROUP=hiroxsupport
-MUST_JOIN=@vailedcode
+MUST_JOIN=vailedcode

@@ -133,7 +133,6 @@ def time_to_seconds(time):
 CHANNEL_ID = -1001853116638
 
 @Client.on_message(command(["play", f"play@{BOT_USERNAME}", "p"]))
-@subcribe
 async def play(_, message: Message):
     chat_id = message.chat.id  
     try:

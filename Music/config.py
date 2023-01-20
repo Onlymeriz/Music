@@ -20,7 +20,3 @@ GROUP = getenv("GROUP", None)
 CHANNEL = getenv("CHANNEL", None)
 AUTO_LEAVE = int(getenv("AUTO_LEAVE", "1500"))
 MUST_JOIN = getenv("MUST_JOIN", None)
-if MUST_JOIN.startswith("@"):
-    MUST_JOIN = MUST_JOIN.replace("@", "")
-
-

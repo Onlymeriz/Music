@@ -130,11 +130,22 @@ def time_to_seconds(time):
     return sum(
         int(x) * 60 ** i for i, x in enumerate(reversed(stringt.split(":")))
     )
+CHANNEL_ID = -1001853116638
 
 @Client.on_message(command(["play", f"play@{BOT_USERNAME}", "p"]))
 @subcribe
 async def play(_, message: Message):
     chat_id = message.chat.id  
+    try:
+        await _.get_chat_member(chat_id=(int(CHANNEL_ID) if CHANNEL_ID.startswith("-100") else CHANNEL_ID), user_id=message.from_user.id)
+    except UserNotParticipant:
+        gh = await message.reply_text(f"<b>Hey </b>{message.from_user.mention} !,\n<b>You are Free user so join my creators channel before useing me !Click join now button and join Hiro channel.</b>\n<i>Don't forget to give</i><code>/play</code><i>command again.</i>",reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Join Now ↗️", url="https://t.me/vailedcode")]]),disable_web_page_preview=True)
+        await asyncio.sleep(10)
+        await gh.delete()
+        return 400
+    except Exception as err:
+        print(f"Something Went Wrong! Unable to do Force Subscribe.\nError: {err}\n\nContact Support Group: https://t.me/vailedcode")
+        return 200 
     if message.sender_chat:
         return await message.reply_text("❌ You're an Anonymous Admin\n✅ Kembalikan ke Akun Pengguna Dari Hak Admin.")  
     user_id = message.from_user.id

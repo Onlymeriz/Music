@@ -564,7 +564,7 @@ async def startyuplay(_,CallbackQuery):
         m = await CallbackQuery.message.reply_photo(
         photo=thumb,
         caption=(f"""
-<b>**Menunggu** :</b> [{title[:50]}]({link})
+<b>**Menunggu** :</b> [{title[:80]}]({url})
 <b>**Durasi** :</b> `{duration}` Menit
 <b>**Status** : `Dalam antrian`
 <b>**Atas Permintaan** : </b>{checking}

@@ -341,12 +341,12 @@ async def boom(_,CallbackQuery):
         await CallbackQuery.edit_message_reply_markup(reply_markup=InlineKeyboardMarkup(buttons)) 
     mystic = await CallbackQuery.edit_message_text("Download Dimulai\n\nKecepatan download mungkin lambat. Harap Sabar Kontol..", reply_markup = inl)
     fetched = f"""
-**Music - Video Sudah Selesai Di Unduh**
-🏷 **Nama** : {x["title"]}
-⏱️ **Duration** : {round(x["duration"] / 60)} `Menit`
-💡 **Views** : {x["view_count"]}
-⚡ **Channel** : {x["uploader"]}
-✨ **Powered By** : [𝙂𝙇𝙄𝙏𝙏𝙀𝙍•](https://t.me/Biarenakliatnyaaaa)"""    
+**Music & Video Sudah Selesai Di Unduh**
+**Nama** : {x["title"]}
+**Duration** : {round(x["duration"] / 60)} `Menit`
+**Views** : {x["view_count"]}
+**Channel** : {x["uploader"]}
+**Developer** : [нιяσѕнι ꭙ](https://t.me/splesneey)"""    
     link = (x["webpage_url"])
     channel = (x["channel_url"])
     perf = (x['uploader'])

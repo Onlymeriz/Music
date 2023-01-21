@@ -260,12 +260,12 @@ async def stop_cmd(_, message):
                     reply_markup=InlineKeyboardMarkup(buttons),
                     caption=(
                         f"""
-<b>⏭️ Melewati lagu</b>
+<b>**Melewati lagu**</b>
 
-<b>🏷 **Nama** : </b>[{title[:50]}]({url})
-<b>⏱️ **Durasi** : </b> `{duration}` `Menit`
-<b>🎧 **Atas permintaan** :</b> {semx.mention}
-<b>✨ **Developer** :<b> **{BOT_NAME}**
+<b>**Nama** : </b>[{title[:50]}]({url})
+<b>**Durasi** : </b> `{duration}` `Menit`
+<b>**permintaan** :</b> {semx.mention}
+<b>**Developer** :<b> **{BOT_NAME}**
 """
                     ),
                 )
@@ -298,12 +298,12 @@ async def stop_cmd(_, message):
                 photo=f"downloads/{_chat_}final.png",
                     reply_markup=InlineKeyboardMarkup(buttons),
                     caption=f"""
-<b>⏭️ Melewati lagu</b>
+<b>**Melewati lagu**</b>
 
-<b>🏷 **Nama** : </b>[{title[:50]}]
-<b>⏱️ **Durasi** : </b> `{duration}` `Menit`
-<b>🎧 **Atas permintaan** :</b> {username}
-<b>✨ **Developer** :<b> **{BOT_NAME}**
+<b>**Nama** : </b>[{title[:50]}]
+<b>**Durasi** : </b> `{duration}` `Menit`
+<b>**Permintaan** :</b> {username}
+<b>**Developer** :<b> **{BOT_NAME}**
 """,
                 )
                 return

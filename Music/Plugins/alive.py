@@ -52,27 +52,27 @@ async def alive(client, message):
     uptime = await _human_time_duration(int(uptime_sec))
     await client.send_photo(message.chat.id,
         photo=f"{HIRO_IMG}",
-        caption=f"""**Hi {message.from_user.mention()} Saya Adalah HiroshiMusic**
-➖➖➖➖➖➖➖➖ \n
+        caption=f"""**Hi {message.from_user.mention()}**
+➖➖➖➖➖➖➖➖
 ✘ **I'm Working Properly** 
-➖➖➖➖➖➖➖➖ \n
+➖➖➖➖➖➖➖➖
 ✘ **Uptime : `{uptime}`** 
-➖➖➖➖➖➖➖➖ \n
+➖➖➖➖➖➖➖➖
 ✘ **Pyrogram Version : `{pyrover}`** 
-➖➖➖➖➖➖➖➖ \n
+➖➖➖➖➖➖➖➖
 ✘ **PyTgCalls Version: `{pytover.__version__}`** 
-➖➖➖➖➖➖➖➖ \n
+➖➖➖➖➖➖➖➖
 ✘ **Using New Version**
-➖➖➖➖➖➖➖➖ \n
+➖➖➖➖➖➖➖➖
 **Thanks For Using Me 🔥**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "Group", url=f"t.me/{GROUP}"
+                        "🖇 𝙶ʀᴏᴜᴘ", url=f"t.me/{GROUP}"
                     ),
                     InlineKeyboardButton(
-                        "Channel", url=f"t.me/{CHANNEL}"
+                        "💌 𝙲ʜᴀɴɴᴇʟ", url=f"t.me/{CHANNEL}"
                     )
                 ]
             ]

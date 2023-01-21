@@ -229,7 +229,7 @@ async def play(_, message: Message):
             else file_name,
         )
         title = "Selected Audio from Telegram"
-        link = "https://t.me/bombleebas"
+        link = "https://t.me/virtualanons"
         thumb = "cache/audioplay.jpg"
         videoid = "smex1"
     elif url:
@@ -355,25 +355,25 @@ async def play(_, message: Message):
         buttons = search_markup(ID1, ID2, ID3, ID4, ID5, duration1, duration2, duration3, duration4, duration5, user_id, query)
         hmo = await message.reply_text(
             f"""
-¹ <b>{title1[:65]}</b>
+¹ <b>{title1[:35]}</b>
   ┣ ❒ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗ ❒ __Powered by {BOT_NAME}__
+  ┗ ❒ __{BOT_NAME}__
 
-² <b>{title2[:65]}</b>
+² <b>{title2[:35]}</b>
   ┣ ❒ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗ ❒ __Powered by {BOT_NAME}__
+  ┗ ❒ __{BOT_NAME}__
 
-³ <b>{title3[:65]}</b>
+³ <b>{title3[:35]}</b>
   ┣ ❒ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗ ❒ __Powered by {BOT_NAME}__
+  ┗ ❒ __{BOT_NAME}__
 
-⁴ <b>{title4[:65]}</b>
+⁴ <b>{title4[:35]}</b>
   ┣ ❒ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗ ❒ __Powered by {BOT_NAME}__
+  ┗ ❒ __{BOT_NAME}__
 
-⁵ <b>{title5[:65]}</b>
+⁵ <b>{title5[:35]}</b>
   ┣ ❒ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗ ❒ __Powered by {BOT_NAME}__
+  ┗ ❒ __{BOT_NAME}__
 """,    
             reply_markup=InlineKeyboardMarkup(buttons),
             disable_web_page_preview=True,
@@ -407,12 +407,10 @@ async def play(_, message: Message):
         await message.reply_photo(
             photo=thumb,
             caption=(f"""
-<b>**🎼 Menambahkan Ke Daftar Antrian Lagu 🎼**</b>
-
-<b>🏷️ **Nama** :</b> [{title[:50]}]({link})
-<b>⏱️ **Durasi** :</b> {duration} Menit
-<b>🎧 **Atas Permintaan** : </b>{checking}
-<b>🔢 **Posisi Antrian Ke** » </b>{position}
+<b>**Menunggu** :</b> [{title[:50]}]({link})
+<b>**Durasi** :</b> `{duration}` Menit
+<b>**Atas Permintaan** : </b>{checking}
+<b>**Antrian Ke : #</b>{position}!**
 """),
             reply_markup=InlineKeyboardMarkup(buttons)
         )
@@ -445,9 +443,9 @@ async def play(_, message: Message):
         photo=thumb,
         reply_markup=InlineKeyboardMarkup(buttons),    
         caption=(f"""
-<b>🏷 **Nama** :</b> [{title[:50]}]({link})
-<b>⏱️ **Durasi** :</b> {duration} Menit
-<b>🎧 **Atas Permintaan** :</b> {checking}
+<b>**Memutar** :</b> [{title[:50]}]({link})
+<b>**Durasi** :</b> `{duration}` Menit
+<b>**Permintaan** :</b> {checking}
 """)
         )   
         return await mystic.delete()
@@ -566,13 +564,11 @@ async def startyuplay(_,CallbackQuery):
         m = await CallbackQuery.message.reply_photo(
         photo=thumb,
         caption=(f"""
-<b>🎼 Menambahkan Ke Daftar Antrian 🎼</b> 
-
-<b>🏷 **Nama** :</b> [{title[:80]}]({url})
-<b>⏱️ **Durasi** :</b> {duration} Menit
-<b>💡 **Status** : `Dalam antrian`
-<b>🎧 **Atas Permintaan** :</b> {checking}
-<b>🔢 **Posisi Antrian Ke** »</b> `{position}`
+<b>**Menunggu** :</b> [{title[:50]}]({link})
+<b>**Durasi** :</b> `{duration}` Menit
+<b>**Status** : `Dalam antrian`
+<b>**Atas Permintaan** : </b>{checking}
+<b>**Antrian Ke : #</b>{position}!**
 """),
         reply_markup=InlineKeyboardMarkup(buttons)
         )
@@ -596,10 +592,10 @@ async def startyuplay(_,CallbackQuery):
         photo=thumb,
         reply_markup=InlineKeyboardMarkup(buttons),    
         caption=(f"""
-<b>🏷 **Nama** :</b> [{title[:80]}]({url})
-<b>⏱️ **Durasi** :</b> {duration} Menit
-<b>💡 **Status** : `Sedang memutar`
-<b>🎧 **Atas Permintaan** :</b> {checking}
+<b>**Memutar** :</b> [{title[:50]}]({url})
+<b>**Durasi** :</b> `{duration}` Menit
+<b>**Status** : `Sedang memutar`
+<b>**Permintaan** :</b> {checking}
 """)
         )   
         os.remove(thumb)
@@ -661,25 +657,25 @@ async def popat(_,CallbackQuery):
         buttons = search_markup2(ID6, ID7, ID8, ID9, ID10, duration6, duration7, duration8, duration9, duration10 ,user_id, query)
         await CallbackQuery.edit_message_text(
             f"""
-⁶ <b>{title6[:60]}</b>
+⁶ <b>{title6[:35]}</b>
   ┣ ❒ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗ ❒ __Powered by {BOT_NAME}__
+  ┗ ❒ __{BOT_NAME}__
 
-⁷ <b>{title7[:60]}</b>
+⁷ <b>{title7[:35]}</b>
   ┣ ❒ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗ ❒ __Powered by {BOT_NAME}__
+  ┗ ❒ __{BOT_NAME}__
 
-⁸ <b>{title8[:60]}</b>
+⁸ <b>{title8[:35]}</b>
   ┣ ❒ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗ ❒ __Powered by {BOT_NAME}__
+  ┗ ❒ __{BOT_NAME}__
 
-⁹ <b>{title9[:60]}</b>
+⁹ <b>{title9[:35]}</b>
   ┣ ❒ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗ ❒ __Powered by {BOT_NAME}__
+  ┗ ❒ __{BOT_NAME}__
 
-¹⁰ <b>{title10[:60]}</b>
+¹⁰ <b>{title10[:35]}</b>
    ┣ ❒ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-   ┗ ❒ __Powered by {BOT_NAME}__
+   ┗ ❒ __{BOT_NAME}__
 """, 
             reply_markup=InlineKeyboardMarkup(buttons),
             disable_web_page_preview=True,
@@ -689,25 +685,25 @@ async def popat(_,CallbackQuery):
         buttons = search_markup(ID1, ID2, ID3, ID4, ID5, duration1, duration2, duration3, duration4, duration5, user_id, query)
         await CallbackQuery.edit_message_text(
             f"""
-¹ <b>{title1[:60]}</b>
+¹ <b>{title1[:35]}</b>
   ┣ ❒ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗ ❒ __Powered by {BOT_NAME}__
+  ┗ ❒ __{BOT_NAME}__
 
-² <b>{title2[:60]}</b>
+² <b>{title2[:35]}</b>
   ┣ ❒ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗ ❒ __Powered by {BOT_NAME}__
+  ┗ ❒ __{BOT_NAME}__
 
-³ <b>{title3[:60]}</b>
+³ <b>{title3[:35]}</b>
   ┣ ❒ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗ ❒ __Powered by {BOT_NAME}__
+  ┗ ❒ __{BOT_NAME}__
 
-⁴ <b>{title4[:60]}</b>
+⁴ <b>{title4[:35]}</b>
   ┣ ❒ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗ ❒ __Powered by {BOT_NAME}__
+  ┗ ❒ __{BOT_NAME}__
 
-⁵ <b>{title5[:60]}</b>
+⁵ <b>{title5[:35]}</b>
   ┣ ❒ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗ ❒ __Powered by {BOT_NAME}__
+  ┗ ❒ __{BOT_NAME}__
 """,    
             reply_markup=InlineKeyboardMarkup(buttons),
             disable_web_page_preview=True,

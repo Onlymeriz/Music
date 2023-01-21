@@ -329,11 +329,11 @@ Gagal mengunduh video ini.
                     reply_markup=InlineKeyboardMarkup(buttons),
                     caption=(
                         f"""
-<b>⏭️ Melewati lagu permintaa {rpk}</b>
+<b>**Melewati lagu permintaa** {rpk}</b>
 
-<b>🏷 Nama: </b>[{title[:25]}]({url})
-<b>⏱️ Durasi: :</b> {duration}
-<b>🎧 Atas permintaan:</b> {semx.mention}
+<b>**Nama :** </b>[{title[:25]}]({url})
+<b>**Durasi :** </b> `{duration}` `Menit`
+<b>**Permintaan :** </b> {semx.mention}
 """
                     ),
                 )
@@ -374,11 +374,11 @@ Gagal mengunduh video ini.
                     photo=f"downloads/{_chat_}final.png",
                     reply_markup=InlineKeyboardMarkup(buttons),
                     caption=f"""
-<b>⏭️ Melewati lagu permintaa: {rpk}</b>
+<b>**Melewati lagu permintaa :** {rpk}</b>
 
-<b>🏷️ Nama:</b> {title}
-<b>⌚ Durasi</b> {duration}
-<b>🎧 Atas permintaan:</b> {username}
+<b>**Nama :** </b> {title}
+<b>**Durasi :** </b> `{duration}`
+<b>**Permintaan :** </b> {username}
 """,
                 )
                 return
@@ -537,7 +537,7 @@ Personal Playlist Playing."""
                     m = await CallbackQuery.message.reply_photo(
                     photo=thumb,
                     reply_markup=InlineKeyboardMarkup(buttons),    
-                    caption=(f"🎥<b>__Playing:__ </b>[{title[:25]}]({url}) \n⏳<b>__Duration:__</b> {duration} \n💡<b>__Info:__</b> [Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n👤**__Requested by:__** {checking}")
+                    caption=(f"<b>Playing : </b>[{title[:25]}]({url}) \n<b>Duration :</b> {duration} \n<b>Info :</b> [Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n**Permintaan :** {checking}")
                 )   
                     os.remove(thumb)
                     await CallbackQuery.message.delete()
@@ -683,7 +683,7 @@ Group Playlist Playing."""
                     m = await CallbackQuery.message.reply_photo(
                     photo=thumb,
                     reply_markup=InlineKeyboardMarkup(buttons),    
-                    caption=(f"🎥<b>__Playing:__ </b>[{title[:25]}]({url}) \n⏳<b>__Duration:__</b> {duration} \n⚡<b>__Info:__</b> [Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n👤**__Requested by:__** {checking}")
+                    caption=(f"<b>Playing : </b>[{title[:25]}]({url}) \n<b>Duration :</b> {duration} \n<b>Info :</b> [Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n**Permintaan :** {checking}")
                 )   
                     os.remove(thumb)
                     await CallbackQuery.message.delete()

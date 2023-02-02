@@ -1,5 +1,5 @@
-import stream from 'stream';
-import http from 'http';
+import stream
+import http
 
 import AbortController from 'abort-controller';
 import chai from 'chai';

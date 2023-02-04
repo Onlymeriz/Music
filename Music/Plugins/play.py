@@ -308,7 +308,7 @@ async def play(_, message: Message):
                 except Exception as e:
                     taken = "00:00"
                 size = d['_total_bytes_str']
-                mystic.edit(f"**Downloaded {title[:80]}.....**\n\n**Ukuran file:** {size}\n**Time Taken:** {taken} sec\n\n**Converting File** [__FFmpeg processing__]")
+                mystic.edit(f"**Downloaded {title[:80]}.....**\n\n**Ukuran file:** {size}\n**Time Taken:** {taken} sec\n\n**Converting File** [**FFmpeg processing**]")
                 print(f"[{videoid}] Downloaded| Elapsed: {taken} seconds")  
         loop = asyncio.get_event_loop()
         x = await loop.run_in_executor(None, download, link, my_hook)
@@ -357,23 +357,23 @@ async def play(_, message: Message):
             f"""
 ➊ <b>{title1[:35]}</b>
   ┠╼ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗|• __{BOT_NAME}__
+  ┗|• **{BOT_NAME}**
 
 ➋ <b>{title2[:35]}</b>
   ┠╼ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗|• __{BOT_NAME}__
+  ┗|• **{BOT_NAME}**
 
 ➌ <b>{title3[:35]}</b>
   ┠╼ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗|• __{BOT_NAME}__
+  ┗|• **{BOT_NAME}**
 
 ➍ <b>{title4[:35]}</b>
   ┠╼ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗|• __{BOT_NAME}__
+  ┗|• **{BOT_NAME}**
 
 ➎ <b>{title5[:35]}</b>
   ┠╼ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗|• __{BOT_NAME}__
+  ┗|• **{BOT_NAME}**
 """,    
             reply_markup=InlineKeyboardMarkup(buttons),
             disable_web_page_preview=True,
@@ -532,7 +532,7 @@ async def startyuplay(_,CallbackQuery):
             except Exception as e:
                 taken = "00:00"
             size = d['_total_bytes_str']
-            mystic.edit(f"**Downloaded {title[:50]}.....**\n\n**Ukuran file:** {size}\n**Time Taken:** {taken} sec\n\n**Converting File** [__FFmpeg processing__]")
+            mystic.edit(f"**Downloaded {title[:50]}.....**\n\n**Ukuran file:** {size}\n**Time Taken:** {taken} sec\n\n**Converting File** [**FFmpeg processing**]")
             print(f"[{videoid}] Downloaded| Elapsed: {taken} seconds")    
     loop = asyncio.get_event_loop()
     x = await loop.run_in_executor(None, download, url, my_hook)
@@ -659,23 +659,23 @@ async def popat(_,CallbackQuery):
             f"""
 ➏ <b>{title6[:35]}</b>
   ┠╼ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗|• __{BOT_NAME}__
+  ┗|• **{BOT_NAME}**
 
 ➐ <b>{title7[:35]}</b>
   ┠╼ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗|• __{BOT_NAME}__
+  ┗|• **{BOT_NAME}**
 
 ➑ <b>{title8[:35]}</b>
   ┠╼ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗|• __{BOT_NAME}__
+  ┗|• **{BOT_NAME}**
 
 ➒ <b>{title9[:35]}</b>
   ┠╼ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗|• __{BOT_NAME}__
+  ┗|• **{BOT_NAME}**
 
 ➓ <b>{title10[:35]}</b>
    ┠╼ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-   ┗|• __{BOT_NAME}__
+   ┗|• **{BOT_NAME}**
 """, 
             reply_markup=InlineKeyboardMarkup(buttons),
             disable_web_page_preview=True,
@@ -687,23 +687,23 @@ async def popat(_,CallbackQuery):
             f"""
 ➊ <b>{title1[:35]}</b>
   ┠╼ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗|• __{BOT_NAME}__
+  ┗|• **{BOT_NAME}**
 
 ➋ <b>{title2[:35]}</b>
   ┠╼ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗|• __{BOT_NAME}__
+  ┗|• **{BOT_NAME}**
 
 ➌ <b>{title3[:35]}</b>
   ┠╼ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗|• __{BOT_NAME}__
+  ┗|• **{BOT_NAME}**
 
 ➍ <b>{title4[:35]}</b>
   ┠╼ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗|• __{BOT_NAME}__
+  ┗|• **{BOT_NAME}**
 
 ➎ <b>{title5[:35]}</b>
   ┠╼ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗|• __{BOT_NAME}__
+  ┗|• **{BOT_NAME}**
 """,    
             reply_markup=InlineKeyboardMarkup(buttons),
             disable_web_page_preview=True,

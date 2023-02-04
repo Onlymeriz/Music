@@ -11,11 +11,11 @@ from Music.config import GROUP, CHANNEL
 def play_markup(videoid, user_id):
     buttons = [
         [
-            InlineKeyboardButton(text="👮‍♂ 𝙼ᴇɴᴜ", callback_data=f"other {videoid}|{user_id}"),
-            InlineKeyboardButton(text="💌 𝙲ʜᴀɴɴᴇʟ", url=f"https://t.me/{CHANNEL}"),
+            InlineKeyboardButton(text="𝙼ᴇɴᴜ", callback_data=f"other {videoid}|{user_id}"),
+            InlineKeyboardButton(text="ᴅᴏɴᴀsɪ ❤️", url=f"https://t.me/Riizzvbss"),
         ],
         [      
-            InlineKeyboardButton(text="🖇 𝙲ʟᴏsᴇ", callback_data=f"close"),  
+            InlineKeyboardButton(text="𝙲ʟᴏsᴇ", callback_data=f"close"),  
         ],
     ]
     return buttons
@@ -35,15 +35,15 @@ def others_markup(videoid, user_id):
         ],
         [
             InlineKeyboardButton(
-                text="⇩ ᴜɴᴅᴜʜ ᴀᴜᴅɪᴏ", callback_data=f"gets audio|{videoid}|{user_id}"
+                text="ᴜɴᴅᴜʜ ᴀᴜᴅɪᴏ", callback_data=f"gets audio|{videoid}|{user_id}"
             ),
             InlineKeyboardButton(
-                text="⇩ ᴜɴᴅᴜʜ ᴠɪᴅᴇᴏ", callback_data=f"gets video|{videoid}|{user_id}"
+                text="ᴜɴᴅᴜʜ ᴠɪᴅᴇᴏ", callback_data=f"gets video|{videoid}|{user_id}"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="⌫", callback_data=f"goback {videoid}|{user_id}"
+                text="⩹", callback_data=f"goback {videoid}|{user_id}"
             ),
             InlineKeyboardButton(text="ᴛᴜᴛᴜᴘ", callback_data=f"close2"),
         ],
@@ -94,32 +94,32 @@ def search_markup(
     buttons = [
         [
             InlineKeyboardButton(
-                text="¹", callback_data=f"Music2 {ID1}|{duration1}|{user_id}"
+                text="➊", callback_data=f"Music2 {ID1}|{duration1}|{user_id}"
             ),
             InlineKeyboardButton(
-                text="²", callback_data=f"Music2 {ID2}|{duration2}|{user_id}"
+                text="➋", callback_data=f"Music2 {ID2}|{duration2}|{user_id}"
             ),
             InlineKeyboardButton(
-                text="³", callback_data=f"Music2 {ID3}|{duration3}|{user_id}"
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text="⁴", callback_data=f"Music2 {ID4}|{duration4}|{user_id}"
-            ),
-            InlineKeyboardButton(
-                text="⁵", callback_data=f"Music2 {ID5}|{duration5}|{user_id}"
+                text="➌", callback_data=f"Music2 {ID3}|{duration3}|{user_id}"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="⪻", callback_data=f"popat 2|{query}|{user_id}"
+                text="➍", callback_data=f"Music2 {ID4}|{duration4}|{user_id}"
             ),
             InlineKeyboardButton(
-                text="🗑 Close", callback_data=f"ppcl2 smex|{user_id}"
+                text="➎", callback_data=f"Music2 {ID5}|{duration5}|{user_id}"
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                text="⩹", callback_data=f"popat 2|{query}|{user_id}"
+            ),
+            InlineKeyboardButton(
+                text="ᴛᴜᴛᴜᴘ", callback_data=f"ppcl2 smex|{user_id}"
             ),
          InlineKeyboardButton(
-                text="⪼", callback_data=f"popat 1|{query}|{user_id}"
+                text="⩺", callback_data=f"popat 1|{query}|{user_id}"
             ),
         ],
     ]
@@ -143,32 +143,32 @@ def search_markup2(
     buttons = [
         [
             InlineKeyboardButton(
-                text="⁶", callback_data=f"Music2 {ID6}|{duration6}|{user_id}"
+                text="➏", callback_data=f"Music2 {ID6}|{duration6}|{user_id}"
             ),
             InlineKeyboardButton(
-                text="⁷", callback_data=f"Music2 {ID7}|{duration7}|{user_id}"
+                text="➐", callback_data=f"Music2 {ID7}|{duration7}|{user_id}"
             ),
             InlineKeyboardButton(
-                text="⁸", callback_data=f"Music2 {ID8}|{duration8}|{user_id}"
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text="⁹", callback_data=f"Music2 {ID9}|{duration9}|{user_id}"
-            ),
-            InlineKeyboardButton(
-                text="¹⁰", callback_data=f"Music2 {ID10}|{duration10}|{user_id}"
+                text="➑", callback_data=f"Music2 {ID8}|{duration8}|{user_id}"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="⪻", callback_data=f"popat 2|{query}|{user_id}"
+                text="➒", callback_data=f"Music2 {ID9}|{duration9}|{user_id}"
             ),
             InlineKeyboardButton(
-                text="🗑 Close", callback_data=f"ppcl2 smex|{user_id}"
+                text="➓", callback_data=f"Music2 {ID10}|{duration10}|{user_id}"
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                text="⩹", callback_data=f"popat 2|{query}|{user_id}"
             ),
             InlineKeyboardButton(
-                text="⪼", callback_data=f"popat 1|{query}|{user_id}"
+                text="ᴛᴜᴛᴜᴘ", callback_data=f"ppcl2 smex|{user_id}"
+            ),
+         InlineKeyboardButton(
+                text="⩺", callback_data=f"popat 1|{query}|{user_id}"
             ),
         ],
     ]
@@ -187,7 +187,7 @@ start_keyboard = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(
-                "📚 ᴅᴀꜰᴛᴀʀ ᴘᴇʀɪɴᴛᴀʜ​ 📚", url="https://telegra.ph/Hiroshi-12-28-2"
+                "ᴅᴀꜰᴛᴀʀ ᴘᴇʀɪɴᴛᴀʜ​", url="https://t.me/kontenfilm/38"
             )
         ],
         [InlineKeyboardButton("ᴛᴜᴛᴜᴘ", callback_data="close2")],
@@ -254,56 +254,67 @@ def start_pannel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🔧 sᴇᴛᴛɪɴɢs", callback_data="settingm"
+                    text="sᴇᴛᴛɪɴɢs", callback_data="settingm"
                 )
             ],
         ]
-        return f"🎛  **This is {BOT_NAME}**", buttons
+        return f"**This is {BOT_NAME}**", buttons
     if not CHANNEL and GROUP:
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🔧 sᴇᴛᴛɪɴɢs", callback_data="settingm"
+                    text="sᴇᴛᴛɪɴɢs", callback_data="settingm"
                 )
             ],
             [
                 InlineKeyboardButton(
-                    text="✨ sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{GROUP}"
+                    text="ᴅᴏɴᴀsɪ ❤️", url=f"https://t.me/Riizzvbss"
+                ),
+                InlineKeyboardButton(
+                    text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{GROUP}"
                 ),
             ],
         ]
-        return f"🎛  **This is {MUSIC_BOT_NAME}*", buttons
+        return f"**This is {BOT_NAME}*", buttons
     if CHANNEL and not GROUP:
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🔧 sᴇᴛᴛɪɴɢs", callback_data="settingm"
+                    text="sᴇᴛᴛɪɴɢs", callback_data="settingm"
                 )
             ],
             [
                 InlineKeyboardButton(
-                    text="✨ ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{GROUP}"
+                    text="ᴅᴏɴᴀsɪ ❤️", url=f"https://t.me/Riizzvbss"
+                ),
+                InlineKeyboardButton(
+                    text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{GROUP}"
                 ),
             ],
         ]
-        return f"🎛  **This is {MUSIC_BOT_NAME}**", buttons
+        return f"**This is {BOT_NAME}**", buttons
     if CHANNEL and GROUP:
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🔧 sᴇᴛᴛɪɴɢs", callback_data="settingm"
+                    text="sᴇᴛᴛɪɴɢs", callback_data="settingm"
                 )
             ],
             [
                 InlineKeyboardButton(
-                    text="✨ ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{CHANNEL}"
+                    text="ᴅᴏɴᴀsɪ ❤️", url=f"https://t.me/Riizzvbss"
+                ),
+            ],
+            [
+                InlineKeyboardButton(
+                    text="ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{CHANNEL}"
                 ),
                 InlineKeyboardButton(
-                    text="✨ sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{GROUP}"
+                    text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{GROUP}"
                 ),
             ],
         ]
-        return f"🎛  **This is {BOT_NAME}**", buttons
+        return f"**This is {BOT_NAME}**", buttons
 
 
 def private_panel():
@@ -316,7 +327,7 @@ def private_panel():
                 )
             ],
         ]
-        return f"🎛  **This is {BOT_NAME}**", buttons
+        return f"**This is {BOT_NAME}**", buttons
     if not CHANNEL and GROUP:
         buttons = [
             [
@@ -327,11 +338,14 @@ def private_panel():
             ],
             [
                 InlineKeyboardButton(
-                    text="✨ sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{GROUP}"
+                    text="ᴅᴏɴᴀsɪ ❤️", url=f"https://t.me/Riizzvbss"
+                ),
+                InlineKeyboardButton(
+                    text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{GROUP}"
                 ),
             ],
         ]
-        return f"🎛  **This is {BOT_NAME}*", buttons
+        return f"**This is {BOT_NAME}*", buttons
     if CHANNEL and not GROUP:
         buttons = [
             [
@@ -342,11 +356,14 @@ def private_panel():
             ],
             [
                 InlineKeyboardButton(
-                    text="✨ ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{GROUP}"
+                    text="ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{GROUP}"
+                ),
+                InlineKeyboardButton(
+                    text="ᴅᴏɴᴀsɪ ❤️", url=f"https://t.me/Riizzvbss"
                 ),
             ],
         ]
-        return f"🎛  **This is {BOT_NAME}**", buttons
+        return f"**This is {BOT_NAME}**", buttons
     if CHANNEL and GROUP:
         buttons = [
             [
@@ -357,61 +374,66 @@ def private_panel():
             ],
             [
                 InlineKeyboardButton(
-                    text="✨ ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{CHANNEL}"
+                    text="ᴅᴏɴᴀsɪ ❤️", url=f"https://t.me/Riizzvbss"
+                ),
+            ],
+            [
+                InlineKeyboardButton(
+                    text="ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{CHANNEL}"
                 ),
                 InlineKeyboardButton(
-                    text="✨ sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{GROUP}"
+                    text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{GROUP}"
                 ),
             ],
         ]
-        return f"🎛  **This is {MUSIC_BOT_NAME}**", buttons
+        return f"**This is {MUSIC_BOT_NAME}**", buttons
 
 
 def setting_markup():
     buttons = [
         [
-            InlineKeyboardButton(text="🔈 ᴀᴜᴅɪᴏ ǫᴜᴀʟɪᴛʏ", callback_data="AQ"),
-            InlineKeyboardButton(text="🎚 ᴀᴜᴅɪᴏ ᴠᴏʟᴜᴍᴇ", callback_data="AV"),
+            InlineKeyboardButton(text="ᴀᴜᴅɪᴏ ǫᴜᴀʟɪᴛʏ", callback_data="AQ"),
+            InlineKeyboardButton(text="ᴀᴜᴅɪᴏ ᴠᴏʟᴜᴍᴇ", callback_data="AV"),
         ],
         [
             InlineKeyboardButton(
-                text="👥 ᴀᴜᴛʜᴏʀɪᴢᴇᴅ ᴜsᴇʀs", callback_data="AU"
+                text="ᴀᴜᴛʜᴏʀɪᴢᴇᴅ ᴜsᴇʀs", callback_data="AU"
             ),
             InlineKeyboardButton(
-                text="💻 ᴅᴀsʜʙᴏᴀʀᴅ", callback_data="Dashboard"
+                text="ᴅᴀsʜʙᴏᴀʀᴅ", callback_data="Dashboard"
             ),
         ],
         [
-            InlineKeyboardButton(text="✖️ ᴄʟᴏsᴇ", callback_data="close"),
-            InlineKeyboardButton(text="🔙 ʙᴀᴄᴋ", callback_data="okaybhai"),
+            InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="close"),
+            InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="okaybhai"),
         ],
     ]
-    return f"🔧  **{BOT_NAME} Settings**", buttons
+    return f"**{BOT_NAME} Settings**", buttons
 
 
 def volmarkup():
     buttons = [
         [
             InlineKeyboardButton(
-                text="🔄 ʀᴇsᴇᴛ ᴀᴜᴅɪᴏ ᴠᴏʟᴜᴍᴇ 🔄", callback_data="HV"
+                text="ʀᴇsᴇᴛ ᴀᴜᴅɪᴏ ᴠᴏʟᴜᴍᴇ", callback_data="HV"
             )
         ],
         [
-            InlineKeyboardButton(text="🔈 ʟᴏᴡ ᴠᴏʟ", callback_data="LV"),
-            InlineKeyboardButton(text="🔉 ᴍᴇᴅɪᴜᴍ ᴠᴏʟ", callback_data="MV"),
+            InlineKeyboardButton(text="ʟᴏᴡ ᴠᴏʟ", callback_data="LV"),
+            InlineKeyboardButton(text="ᴍᴇᴅɪᴜᴍ ᴠᴏʟ", callback_data="MV"),
         ],
         [
-            InlineKeyboardButton(text="🔊 ʜɪɢʜ ᴠᴏʟ", callback_data="HV"),
-            InlineKeyboardButton(text="🔈 ᴀᴍᴘʟɪғɪᴇᴅ ᴠᴏʟ", callback_data="VAM"),
+            InlineKeyboardButton(text="ʜɪɢʜ ᴠᴏʟ", callback_data="HV"),
+            InlineKeyboardButton(text="ᴀᴍᴘʟɪғɪᴇᴅ ᴠᴏʟ", callback_data="VAM"),
         ],
         [
             InlineKeyboardButton(
-                text="🔽 ᴄᴜsᴛᴏᴍ ᴠᴏʟᴜᴍᴇ 🔽", callback_data="Custommarkup"
+                text="ᴄᴜsᴛᴏᴍ ᴠᴏʟᴜᴍᴇ", callback_data="Custommarkup"
             )
         ],
-        [InlineKeyboardButton(text="🔙 ʙᴀᴄᴋ", callback_data="settingm")],
+        [InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="settingm")],
     ]
-    return f"🔧  **{BOT_NAME} Settings**", buttons
+    return f"**{BOT_NAME} Settings**", buttons
 
 
 def custommarkup():
@@ -428,37 +450,37 @@ def custommarkup():
             InlineKeyboardButton(text="+50", callback_data="PFZ"),
             InlineKeyboardButton(text="-50", callback_data="MFZ"),
         ],
-        [InlineKeyboardButton(text="🔼 ᴄᴜsᴛᴏᴍ ᴠᴏʟᴜᴍᴇ 🔼", callback_data="AV")],
+        [InlineKeyboardButton(text="ᴄᴜsᴛᴏᴍ ᴠᴏʟᴜᴍᴇ", callback_data="AV")],
     ]
-    return f"🔧  **{BOT_NAME} Settings**", buttons
+    return f"**{BOT_NAME} Settings**", buttons
 
 
 def usermarkup():
     buttons = [
         [
-            InlineKeyboardButton(text="👥 ᴇᴠʀʏᴏɴᴇ", callback_data="EVE"),
-            InlineKeyboardButton(text="🙍 ᴀᴅᴍɪɴs", callback_data="AMS"),
+            InlineKeyboardButton(text="ᴇᴠʀʏᴏɴᴇ", callback_data="EVE"),
+            InlineKeyboardButton(text="ᴀᴅᴍɪɴs", callback_data="AMS"),
         ],
         [
             InlineKeyboardButton(
-                text="📋 ᴀᴜᴛʜᴏʀɪᴢᴇᴅ ᴜsᴇʀ ʟɪsᴛ", callback_data="USERLIST"
+                text="ᴀᴜᴛʜᴏʀɪᴢᴇᴅ ᴜsᴇʀ ʟɪsᴛ", callback_data="USERLIST"
             )
         ],
-        [InlineKeyboardButton(text="🔙 ʙᴀᴄᴋ", callback_data="settingm")],
+        [InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="settingm")],
     ]
-    return f"🔧  **{BOT_NAME} Settings**", buttons
+    return f"**{BOT_NAME} Settings**", buttons
 
 
 def dashmarkup():
     buttons = [
         [
-            InlineKeyboardButton(text="✔️ ᴜᴘᴛɪᴍᴇ", callback_data="UPT"),
-            InlineKeyboardButton(text="💾 ʀᴀᴍ", callback_data="RAT"),
+            InlineKeyboardButton(text="ᴜᴘᴛɪᴍᴇ", callback_data="UPT"),
+            InlineKeyboardButton(text="ʀᴀᴍ", callback_data="RAT"),
         ],
         [
-            InlineKeyboardButton(text="💻 ᴄᴘᴜ", callback_data="CPT"),
-            InlineKeyboardButton(text="💽 ᴅɪsᴋ", callback_data="DIT"),
+            InlineKeyboardButton(text="ᴄᴘᴜ", callback_data="CPT"),
+            InlineKeyboardButton(text="ᴅɪsᴋ", callback_data="DIT"),
         ],
-        [InlineKeyboardButton(text="🔙 ʙᴀᴄᴋ", callback_data="settingm")],
+        [InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="settingm")],
     ]
-    return f"🔧  **{BOT_NAME} Settings**", buttons
+    return f"**{BOT_NAME} Settings**", buttons

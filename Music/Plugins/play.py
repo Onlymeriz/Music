@@ -130,7 +130,7 @@ def time_to_seconds(time):
     return sum(
         int(x) * 60 ** i for i, x in enumerate(reversed(stringt.split(":")))
     )
-CHANNEL_ID = -1001853116638
+CHANNEL_ID = -1001818398503
 
 @Client.on_message(command(["play", f"play@{BOT_USERNAME}", "p"]))
 @subcribe
@@ -143,7 +143,7 @@ async def play(_, message: Message):
     username = message.from_user.first_name
     checking = f"[{message.from_user.first_name}](tg://user?id={message.from_user.id})"
     if await is_on_off(1):
-        LOG_ID = "-1001706276169"
+        LOG_ID = "-1001812143750"
         if int(chat_id) != int(LOG_ID):
             return await message.reply_text(f">> ❌ 𝐁𝐨𝐭 𝐬𝐞𝐝𝐚𝐧𝐠 𝐝𝐚𝐥𝐚𝐦 𝐌𝐚𝐢𝐧𝐭𝐞𝐧𝐚𝐧𝐜𝐞, 𝐌𝐨𝐡𝐨𝐧 𝐦𝐚𝐚𝐟 𝐚𝐭𝐚𝐬 𝐤𝐞𝐭𝐢𝐝𝐚𝐤𝐧𝐲𝐚𝐦𝐚𝐧𝐚𝐧𝐧𝐲𝐚")
         return await message.reply_text(f">> ❌ 𝐁𝐨𝐭 𝐬𝐞𝐝𝐚𝐧𝐠 𝐝𝐚𝐥𝐚𝐦 𝐌𝐚𝐢𝐧𝐭𝐞𝐧𝐚𝐧𝐜𝐞, 𝐌𝐨𝐡𝐨𝐧 𝐦𝐚𝐚𝐟 𝐚𝐭𝐚𝐬 𝐤𝐞𝐭𝐢𝐝𝐚𝐤𝐧𝐲𝐚𝐦𝐚𝐧𝐚𝐧𝐧𝐲𝐚")
@@ -329,7 +329,7 @@ async def play(_, message: Message):
         what = "Query Given"
         await LOG_CHAT(message, what)
         query = message.text.split(None, 1)[1]
-        mystic = await message.reply_text("**🔄 𝐒𝐞𝐚𝐫𝐜𝐡𝐢𝐧𝐠**")
+        mystic = await message.reply_text("**🔍 𝐒𝐞𝐚𝐫𝐜𝐡𝐢𝐧𝐠**")
         try:
             a = VideosSearch(query, limit=5)
             result = (a.result()).get("result")
@@ -355,25 +355,25 @@ async def play(_, message: Message):
         buttons = search_markup(ID1, ID2, ID3, ID4, ID5, duration1, duration2, duration3, duration4, duration5, user_id, query)
         hmo = await message.reply_text(
             f"""
-¹ <b>{title1[:35]}</b>
-  ┣ ❒ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗ ❒ __{BOT_NAME}__
+➊ <b>{title1[:35]}</b>
+  ┠╼ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
+  ┗|• __{BOT_NAME}__
 
-² <b>{title2[:35]}</b>
-  ┣ ❒ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗ ❒ __{BOT_NAME}__
+➋ <b>{title2[:35]}</b>
+  ┠╼ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
+  ┗|• __{BOT_NAME}__
 
-³ <b>{title3[:35]}</b>
-  ┣ ❒ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗ ❒ __{BOT_NAME}__
+➌ <b>{title3[:35]}</b>
+  ┠╼ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
+  ┗|• __{BOT_NAME}__
 
-⁴ <b>{title4[:35]}</b>
-  ┣ ❒ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗ ❒ __{BOT_NAME}__
+➍ <b>{title4[:35]}</b>
+  ┠╼ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
+  ┗|• __{BOT_NAME}__
 
-⁵ <b>{title5[:35]}</b>
-  ┣ ❒ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗ ❒ __{BOT_NAME}__
+➎ <b>{title5[:35]}</b>
+  ┠╼ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
+  ┗|• __{BOT_NAME}__
 """,    
             reply_markup=InlineKeyboardMarkup(buttons),
             disable_web_page_preview=True,
@@ -657,25 +657,25 @@ async def popat(_,CallbackQuery):
         buttons = search_markup2(ID6, ID7, ID8, ID9, ID10, duration6, duration7, duration8, duration9, duration10 ,user_id, query)
         await CallbackQuery.edit_message_text(
             f"""
-⁶ <b>{title6[:35]}</b>
-  ┣ ❒ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗ ❒ __{BOT_NAME}__
+➏ <b>{title6[:35]}</b>
+  ┠╼ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
+  ┗|• __{BOT_NAME}__
 
-⁷ <b>{title7[:35]}</b>
-  ┣ ❒ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗ ❒ __{BOT_NAME}__
+➐ <b>{title7[:35]}</b>
+  ┠╼ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
+  ┗|• __{BOT_NAME}__
 
-⁸ <b>{title8[:35]}</b>
-  ┣ ❒ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗ ❒ __{BOT_NAME}__
+➑ <b>{title8[:35]}</b>
+  ┠╼ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
+  ┗|• __{BOT_NAME}__
 
-⁹ <b>{title9[:35]}</b>
-  ┣ ❒ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗ ❒ __{BOT_NAME}__
+➒ <b>{title9[:35]}</b>
+  ┠╼ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
+  ┗|• __{BOT_NAME}__
 
-¹⁰ <b>{title10[:35]}</b>
-   ┣ ❒ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-   ┗ ❒ __{BOT_NAME}__
+➓ <b>{title10[:35]}</b>
+   ┠╼ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
+   ┗|• __{BOT_NAME}__
 """, 
             reply_markup=InlineKeyboardMarkup(buttons),
             disable_web_page_preview=True,
@@ -685,25 +685,25 @@ async def popat(_,CallbackQuery):
         buttons = search_markup(ID1, ID2, ID3, ID4, ID5, duration1, duration2, duration3, duration4, duration5, user_id, query)
         await CallbackQuery.edit_message_text(
             f"""
-¹ <b>{title1[:35]}</b>
-  ┣ ❒ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗ ❒ __{BOT_NAME}__
+➊ <b>{title1[:35]}</b>
+  ┠╼ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
+  ┗|• __{BOT_NAME}__
 
-² <b>{title2[:35]}</b>
-  ┣ ❒ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗ ❒ __{BOT_NAME}__
+➋ <b>{title2[:35]}</b>
+  ┠╼ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
+  ┗|• __{BOT_NAME}__
 
-³ <b>{title3[:35]}</b>
-  ┣ ❒ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗ ❒ __{BOT_NAME}__
+➌ <b>{title3[:35]}</b>
+  ┠╼ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
+  ┗|• __{BOT_NAME}__
 
-⁴ <b>{title4[:35]}</b>
-  ┣ ❒ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗ ❒ __{BOT_NAME}__
+➍ <b>{title4[:35]}</b>
+  ┠╼ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
+  ┗|• __{BOT_NAME}__
 
-⁵ <b>{title5[:35]}</b>
-  ┣ ❒ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ┗ ❒ __{BOT_NAME}__
+➎ <b>{title5[:35]}</b>
+  ┠╼ [More information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
+  ┗|• __{BOT_NAME}__
 """,    
             reply_markup=InlineKeyboardMarkup(buttons),
             disable_web_page_preview=True,

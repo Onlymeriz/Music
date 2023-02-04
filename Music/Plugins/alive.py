@@ -42,7 +42,7 @@ async def _human_time_duration(seconds):
     return ', '.join(parts)
 
 
-HIRO_IMG = "https://telegra.ph/file/8f14f9408d35847396d45.jpg"
+HIRO_IMG = "https://telegra.ph//file/b5fa050775543872ae0ec.jpg"
 
 
 @app.on_message(filters.command(["malive", "alive@Tg_Vc_00_Bot"]))
@@ -53,27 +53,18 @@ async def alive(client, message):
     await client.send_photo(message.chat.id,
         photo=f"{HIRO_IMG}",
         caption=f"""**Hi {message.from_user.mention()}**
-➖➖➖➖➖➖➖➖
-✘ **I'm Working Properly** 
-➖➖➖➖➖➖➖➖
-✘ **Uptime : `{uptime}`** 
-➖➖➖➖➖➖➖➖
-✘ **Pyrogram Version : `{pyrover}`** 
-➖➖➖➖➖➖➖➖
-✘ **PyTgCalls Version: `{pytover.__version__}`** 
-➖➖➖➖➖➖➖➖
-✘ **Using New Version**
-➖➖➖➖➖➖➖➖
+༱ **I'm Working Properly** 
+༱ **Uptime : `{uptime}`** 
+༱ **Pyrogram Version : `{pyrover}`** 
+༱ **PyTgCalls Version: `{pytover.__version__}`** 
+༱ **Using New Version**
 **Thanks For Using Me 🔥**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🖇 𝙶ʀᴏᴜᴘ", url=f"t.me/{GROUP}"
-                    ),
-                    InlineKeyboardButton(
-                        "💌 𝙲ʜᴀɴɴᴇʟ", url=f"t.me/{CHANNEL}"
-                    )
+                    text="ᴅᴏɴᴀsɪ ❤️", url=f"https://t.me/Riizzvbss"
+                )
                 ]
             ]
         )

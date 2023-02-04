@@ -72,6 +72,9 @@ async def vplay(c: Client, message: Message):
                 InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{GROUP}"),
                 InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{CHANNEL}"),
             ]
+            [
+        InlineKeyboardButton(text="ᴅᴏɴᴀsɪ ❤️", url=f"https://t.me/Riizzvbss"),
+        ],
         ]
     )
     if message.sender_chat:
@@ -86,12 +89,14 @@ async def vplay(c: Client, message: Message):
     if a.status != "administrator":
         await message.reply_text(
             f"""
-💡 Untuk menggunakan saya, Saya perlu menjadi admin dengan izin:
+📌 Untuk menggunakan saya, Saya perlu menjadi admin dengan izin:
+
 » ❌ Hapus pesan
 » ❌ Blokir pengguna
 » ❌ Tambah pengguna
 » ❌ Kelola obrolan suara
-✨ Powered by: [{BOT_NAME}](t.me/{BOT_USERNAME})
+
+༊ Powered by: [{BOT_NAME}](t.me/{BOT_USERNAME})
 """,
             disable_web_page_preview=True,
         )
@@ -99,9 +104,11 @@ async def vplay(c: Client, message: Message):
     if not a.can_manage_voice_chats:
         await message.reply_text(
             f"""
-💡 Untuk menggunakan saya, Saya perlu menjadi admin dengan izin:
+📌 Untuk menggunakan saya, Saya perlu menjadi admin dengan izin:
+
 » ❌ Kelola obrolan suara
-✨ Powered by: [{BOT_NAME}](t.me/{BOT_USERNAME})
+
+༊ Powered by: [{BOT_NAME}](t.me/{BOT_USERNAME})
 """,
             disable_web_page_preview=True,
         )
@@ -109,9 +116,11 @@ async def vplay(c: Client, message: Message):
     if not a.can_delete_messages:
         await message.reply_text(
             f"""
-💡 Untuk menggunakan saya, Saya perlu menjadi admin dengan izin:
+📌 Untuk menggunakan saya, Saya perlu menjadi admin dengan izin:
+
 » ❌ Hapus pesan
-✨ Powered by: [{BOT_NAME}](t.me/{BOT_USERNAME})
+
+༊ Powered by: [{BOT_NAME}](t.me/{BOT_USERNAME})
 """,
             disable_web_page_preview=True,
         )
@@ -119,9 +128,11 @@ async def vplay(c: Client, message: Message):
     if not a.can_invite_users:
         await message.reply_text(
             f"""
-💡 Untuk menggunakan saya, Saya perlu menjadi admin dengan izin:
+📌 Untuk menggunakan saya, Saya perlu menjadi admin dengan izin:
+
 » ❌ Tambah pengguna
-✨ Powered by: [{BOT_NAME}](t.me/{BOT_USERNAME})
+
+༊ Powered by: [{BOT_NAME}](t.me/{BOT_USERNAME})
 """,
             disable_web_page_preview=True,
         )
@@ -172,7 +183,7 @@ async def vplay(c: Client, message: Message):
                 else:
                     Q = 720
                     await loser.edit(
-                        "» **Hanya 720, 480, 360 yang diizinkan** \n💡 **Sekarang Streaming Video Dalam 720p**"
+                        "» **Hanya 720, 480, 360 yang diizinkan** \n📌 **Sekarang Streaming Video Dalam 720p**"
                     )
             try:
                 if replied.video:
@@ -186,15 +197,16 @@ async def vplay(c: Client, message: Message):
                 pos = add_to_queue(chat_id, songname, dl, link, "Video", Q)
                 await loser.delete()
                 requester = f"[{message.from_user.first_name}](tg://user?id={message.from_user.id})"
-                await app.send_message(
-                    chat_id,
-                    f"""
-💡 **Trek ditambahkan ke antrian**
-🏷 **Nama:** [{songname[:999]}]({link})
-🎧 **Atas permintaan:** {requester}
-#️⃣ **Posisi antrian** {pos}
+                await message.reply_photo(
+                    photo="cache/IMG_20211230_211039_090.jpg",
+                    caption=f"""
+📌 **Trek ditambahkan ke antrian**
+
+📀 **Nama:** [{songname[:999]}]({link})
+👥 **Atas permintaan:** {requester}
+
+📑 **Posisi antrian** {pos}
 """,
-                    disable_web_page_preview=True,
                     reply_markup=keyboard,
                 )
             else:
@@ -216,15 +228,16 @@ async def vplay(c: Client, message: Message):
                 add_to_queue(chat_id, songname, dl, link, "Video", Q)
                 await loser.delete()
                 requester = f"[{message.from_user.first_name}](tg://user?id={message.from_user.id})"
-                await app.send_message(
-                    chat_id,
-                    f"""
-▶️ **Streaming video dimulai**
-🏷 **Nama:** [{songname[:999]}]({link})
-🎧 **Atas permintaan:** {requester}
+                await message.reply_photo(
+                    photo="cache/IMG_20211230_211039_090.jpg",
+                    caption=f"""
+📽️ **Streaming video dimulai**
+
+📀 **Nama:** [{songname[:999]}]({link})
+👥 **Atas permintaan:** {requester}
+
 💬 **Diputar di:** {message.chat.title}
 """,
-                    disable_web_page_preview=True,
                     reply_markup=keyboard,
                 )
 
@@ -256,18 +269,20 @@ async def vplay(c: Client, message: Message):
                         pos = add_to_queue(chat_id, songname, ytlink, url, "Video", Q)
                         await loser.delete()
                         requester = f"[{message.from_user.first_name}](tg://user?id={message.from_user.id})"
-                        await app.send_message(
-                                chat_id,
-                                f"""
-💡 **Trek ditambahkan ke antrian**
-🏷 **Nama:** [{songname[:999]}]({url})
+                        await message.reply_photo(
+                            photo="cache/IMG_20211230_211039_090.jpg",
+                            caption=f"""
+📌 **Trek ditambahkan ke antrian**
+
+📀 **Nama:** [{songname[:999]}]({url})
 ⏱️ **Durasi:** {duration}
-🎧 **Atas permintaan:** {requester}
-#️⃣ **Posisi antrian** {pos}
+👥 **Atas permintaan:** {requester}
+
+📑 **Posisi antrian** {pos}
 """,
-                            disable_web_page_preview=True,
                             reply_markup=keyboard,
                         )
+                    
                     else:
                         try:
                             await call_py.join_group_call(
@@ -282,16 +297,18 @@ async def vplay(c: Client, message: Message):
                             add_to_queue(chat_id, songname, ytlink, url, "Video", Q)
                             await loser.delete()
                             requester = f"[{message.from_user.first_name}](tg://user?id={message.from_user.id})"
-                            await app.send_message(
-                                chat_id,
-                                f"""
-🎼 **Memutar video dimulai**
-🏷 **Nama:** [{songname[:999]}]({url})
+                            thumb ="cache/IMG_20211230_165039_159.jpg"
+                            await message.reply_photo(
+                                photo="cache/IMG_20211230_211039_090.jpg",
+                                caption=f"""
+📽️ **Memutar video dimulai**
+
+📀 **Nama:** [{songname[:999]}]({url})
 ⏱️ **Durasi:** {duration}
-🎧 **Atas permintaan:** {requester}
+👥 **Atas permintaan:** {requester}
+
 💬 **Diputar di:** {message.chat.title}
 """,
-                                disable_web_page_preview=True,
                                 reply_markup=keyboard,
                             )
                         except Exception as ep:
@@ -307,11 +324,11 @@ async def playlist(client, m: Message):
         if len(chat_queue) == 1:
             await m.delete()
             await m.reply(
-                f"**🎧 SEKARANG MEMUTAR:** \n[{chat_queue[0][0]}]({chat_queue[0][2]}) | `{chat_queue[0][3]}`",
+                f"**📀 SEKARANG MEMUTAR:** \n[{chat_queue[0][0]}]({chat_queue[0][2]}) | `{chat_queue[0][3]}`",
                 disable_web_page_preview=True,
             )
         else:
-            QUE = f"**🎧 SEKARANG MEMUTAR:** \n[{chat_queue[0][0]}]({chat_queue[0][2]}) | `{chat_queue[0][3]}` \n\n**⏯ DAFTAR ANTRIAN:**"
+            QUE = f"**📀 SEKARANG MEMUTAR:** \n[{chat_queue[0][0]}]({chat_queue[0][2]}) | `{chat_queue[0][3]}` \n\n**⏯ DAFTAR ANTRIAN:**"
             l = len(chat_queue)
             for x in range(1, l):
                 hmm = chat_queue[x][0]

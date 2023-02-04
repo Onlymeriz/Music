@@ -210,27 +210,27 @@ Kembalikan ke Akun Pengguna Dari Hak Admin.
         )
         hmo = await message.reply_text(
             f"""
-<b>✨ sɪʟᴀʜᴋᴀɴ ᴘɪʟɪʜ ᴍᴀɴᴀ ʟᴀɢᴜ ʏᴀɴɢ ɪɴɢɪɴ ʟᴜ ᴅᴏᴡɴʟᴏᴀᴅ</b>
+<b>༊ sɪʟᴀʜᴋᴀɴ ᴘɪʟɪʜ ᴍᴀɴᴀ ʟᴀɢᴜ ʏᴀɴɢ ɪɴɢɪɴ ʟᴜ ᴅᴏᴡɴʟᴏᴀᴅ</b>
 
-¹ <b>{title1[:50]}</b>
-  ╠ ❒ [ᴅᴇᴠᴇʟᴏᴘᴇʀ](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ╚ ❒ **{BOT_NAME}**
+➊ <b>{title1[:50]}</b>
+  ┠╼ [More Information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
+  ┗|• **{BOT_NAME}**
 
-² <b>{title2[:50]}</b>
-  ╠ ❒ [ᴋᴇᴘᴏ ʟᴜ ᴋᴏɴᴛᴏʟ](https://t.me/{BOT_USERNAME}?start=info_{ID2})
-  ╚ ❒ **{BOT_NAME}**
+➋ <b>{title2[:50]}</b>
+  ┠╼ [More Information](https://t.me/{BOT_USERNAME}?start=info_{ID2})
+  ┗|• **{BOT_NAME}**
 
-³ <b>{title3[:50]}</b>
-  ╠ ❒ [ᴋᴇᴘᴏ ʟᴜ ᴋᴏɴᴛᴏʟ](https://t.me/{BOT_USERNAME}?start=info_{ID3})
-  ╚ ❒ **{BOT_NAME}**
+➌ <b>{title3[:50]}</b>
+  ┠╼ [More Information](https://t.me/{BOT_USERNAME}?start=info_{ID3})
+  ┗|• **{BOT_NAME}**
 
-⁴ <b>{title4[:50]}</b>
-  ╠ ❒ [ᴋᴇᴘᴏ ʟᴜ ᴋᴏɴᴛᴏʟ](https://t.me/{BOT_USERNAME}?start=info_{ID4})
-  ╚ ❒ **{BOT_NAME}**
+➍ <b>{title4[:50]}</b>
+  ┠╼ [More Information](https://t.me/{BOT_USERNAME}?start=info_{ID4})
+  ┗|• **{BOT_NAME}**
 
-⁵ <b>{title5[:50]}</b>
-  ╠ ❒ [ᴋᴇᴘᴏ ʟᴜ ᴋᴏɴᴛᴏʟ](https://t.me/{BOT_USERNAME}?start=info_{ID5})
-  ╚ ❒ **{BOT_NAME}**
+➎ <b>{title5[:50]}</b>
+  ┠╼ [More Information](https://t.me/{BOT_USERNAME}?start=info_{ID5})
+  ┗|• **{BOT_NAME}**
 """,
             reply_markup=InlineKeyboardMarkup(buttons),
         )
@@ -289,7 +289,7 @@ async def startyuplay(_, CallbackQuery):
         reply_markup=InlineKeyboardMarkup(buttons),
         caption=f"""
 <b>🏷️ **Nama** :</b> [{title[:50]}]({url})
-╚ 💡 [Developer](https://t.me/{BOT_USERNAME}?start=info_{id})
+┗|• 💡 [Developer](https://t.me/{BOT_USERNAME}?start=info_{id})
 """,
     )
     os.remove(thumb)
@@ -366,27 +366,27 @@ async def chonga(_, CallbackQuery):
         )
         await CallbackQuery.edit_message_text(
             f"""
-<b>✨ sɪʟᴀʜᴋᴀɴ ᴘɪʟɪʜ ᴍᴀɴᴀ ʟᴀɢᴜ ʏᴀɴɢ ɪɴɢɪɴ ʟᴜ ᴅᴏᴡɴʟᴏᴀᴅ</b>
+<b>༊ sɪʟᴀʜᴋᴀɴ ᴘɪʟɪʜ ᴍᴀɴᴀ ʟᴀɢᴜ ʏᴀɴɢ ɪɴɢɪɴ ʟᴜ ᴅᴏᴡɴʟᴏᴀᴅ</b>
 
-⁶ <b>{title6[:50]}</b>
-  ╠ ❒ [ᴋᴇᴘᴏ ʟᴜ ᴋᴏɴᴛᴏʟ](https://t.me/{BOT_USERNAME}?start=info_{ID6})
-  ╚ ❒ **{BOT_NAME}**
+➏ <b>{title6[:50]}</b>
+  ┠╼ [More Information](https://t.me/{BOT_USERNAME}?start=info_{ID6})
+  ┗|• **{BOT_NAME}**
 
-⁷ <b>{title7[:50]}</b>
-  ╠ ❒ [ᴋᴇᴘᴏ ʟᴜ ᴋᴏɴᴛᴏʟ](https://t.me/{BOT_USERNAME}?start=info_{ID7})
-  ╚ ❒ **{BOT_NAME}**
+➐ <b>{title7[:50]}</b>
+  ┠╼ [More Information](https://t.me/{BOT_USERNAME}?start=info_{ID7})
+  ┗|• **{BOT_NAME}**
 
-⁸ <b>{title8[:50]}</b>
-  ╠ ❒ [ᴋᴇᴘᴏ ʟᴜ ᴋᴏɴᴛᴏʟ](https://t.me/{BOT_USERNAME}?start=info_{ID8})
-  ╚ ❒ **{BOT_NAME}**
+➑ <b>{title8[:50]}</b>
+  ┠╼ [More Information](https://t.me/{BOT_USERNAME}?start=info_{ID8})
+  ┗|• **{BOT_NAME}**
 
-⁹ <b>{title9[:50]}</b>
-  ╠ ❒ [ᴋᴇᴘᴏ ʟᴜ ᴋᴏɴᴛᴏʟ](https://t.me/{BOT_USERNAME}?start=info_{ID9})
-  ╚ ❒ **{BOT_NAME}**
+➒ <b>{title9[:50]}</b>
+  ┠╼ [More Information](https://t.me/{BOT_USERNAME}?start=info_{ID9})
+  ┗|• **{BOT_NAME}**
 
-¹⁰ <b>{title10[:50]}</b>
-   ╠ ❒ [ᴋᴇᴘᴏ ʟᴜ ᴋᴏɴᴛᴏʟ](https://t.me/{BOT_USERNAME}?start=info_{ID10})
-   ╚ ❒ **{BOT_NAME}**
+➓<b>{title10[:50]}</b>
+   ┠╼ [More Information](https://t.me/{BOT_USERNAME}?start=info_{ID10})
+   ┗|• **{BOT_NAME}**
 """,
             reply_markup=InlineKeyboardMarkup(buttons),
         )  
@@ -396,27 +396,27 @@ async def chonga(_, CallbackQuery):
         buttons = search_markup(ID1, ID2, ID3, ID4, ID5, duration1, duration2, duration3, duration4, duration5, user_id, query)
         await CallbackQuery.edit_message_text(
             f"""
-<b>✨ sɪʟᴀʜᴋᴀɴ ᴘɪʟɪʜ ᴍᴀɴᴀ ʟᴀɢᴜ ʏᴀɴɢ ɪɴɢɪɴ ʟᴜ ᴅᴏᴡɴʟᴏᴀᴅ</b>
+<b>༊ sɪʟᴀʜᴋᴀɴ ᴘɪʟɪʜ ᴍᴀɴᴀ ʟᴀɢᴜ ʏᴀɴɢ ɪɴɢɪɴ ʟᴜ ᴅᴏᴡɴʟᴏᴀᴅ</b>
 
-¹ <b>{title1[:50]}</b>
-  ╠ ❒ [ᴋᴇᴘᴏ ʟᴜ ᴋᴏɴᴛᴏʟ](https://t.me/{BOT_USERNAME}?start=info_{ID1})
-  ╚ ❒ **{BOT_NAME}**
+➊ <b>{title1[:50]}</b>
+  ┠╼ [More Information](https://t.me/{BOT_USERNAME}?start=info_{ID1})
+  ┗|• **{BOT_NAME}**
 
-² <b>{title2[:50]}</b>
-  ╠ ❒ [ᴋᴇᴘᴏ ʟᴜ ᴋᴏɴᴛᴏʟ](https://t.me/{BOT_USERNAME}?start=info_{ID2})
-  ╚ ❒ **{BOT_NAME}**
+➋ <b>{title2[:50]}</b>
+  ┠╼ [More Information](https://t.me/{BOT_USERNAME}?start=info_{ID2})
+  ┗|• **{BOT_NAME}**
 
-³ <b>{title3[:50]}</b>
-  ╠ ❒ [ᴋᴇᴘᴏ ʟᴜ ᴋᴏɴᴛᴏʟ](https://t.me/{BOT_USERNAME}?start=info_{ID3})
-  ╚ ❒ **{BOT_NAME}**
+➌ <b>{title3[:50]}</b>
+  ┠╼ [More Information](https://t.me/{BOT_USERNAME}?start=info_{ID3})
+  ┗|• **{BOT_NAME}**
 
-⁴ <b>{title4[:50]}</b>
-  ╠ ❒ [ᴋᴇᴘᴏ ʟᴜ ᴋᴏɴᴛᴏʟ](https://t.me/{BOT_USERNAME}?start=info_{ID4})
-  ╚ ❒ **{BOT_NAME}**
+➍ <b>{title4[:50]}</b>
+  ┠╼ [More Information](https://t.me/{BOT_USERNAME}?start=info_{ID4})
+  ┗|• **{BOT_NAME}**
 
-⁵ <b>{title5[:50]}</b>
-  ╠ ❒ [ᴋᴇᴘᴏ ʟᴜ ᴋᴏɴᴛᴏʟ](https://t.me/{BOT_USERNAME}?start=info_{ID5})
-  ╚ ❒ **{BOT_NAME}**
+➎ <b>{title5[:50]}</b>
+  ┠╼ [More Information](https://t.me/{BOT_USERNAME}?start=info_{ID5})
+  ┗|• **{BOT_NAME}**
 """,
             reply_markup=InlineKeyboardMarkup(buttons),
         )  
@@ -426,19 +426,19 @@ async def chonga(_, CallbackQuery):
 def search_markup(ID1, ID2, ID3, ID4, ID5, duration1, duration2, duration3, duration4, duration5, user_id, query):
     buttons= [
             [
-                InlineKeyboardButton(text="¹", callback_data=f'beta {ID1}|{duration1}|{user_id}'),
-                InlineKeyboardButton(text="²", callback_data=f'beta {ID2}|{duration2}|{user_id}'),
-                InlineKeyboardButton(text="³", callback_data=f'beta {ID3}|{duration3}|{user_id}')
+                InlineKeyboardButton(text="➊", callback_data=f'beta {ID1}|{duration1}|{user_id}'),
+                InlineKeyboardButton(text="➋", callback_data=f'beta {ID2}|{duration2}|{user_id}'),
+                InlineKeyboardButton(text="➌", callback_data=f'beta {ID3}|{duration3}|{user_id}')
             ],
             [ 
-                InlineKeyboardButton(text="⁴", callback_data=f'beta {ID4}|{duration4}|{user_id}'),
-                InlineKeyboardButton(text="⁵", callback_data=f'beta {ID5}|{duration5}|{user_id}')
+                InlineKeyboardButton(text="➍", callback_data=f'beta {ID4}|{duration4}|{user_id}'),
+                InlineKeyboardButton(text="➎", callback_data=f'beta {ID5}|{duration5}|{user_id}')
             ],
             [ 
                 
-                InlineKeyboardButton(text="<<", callback_data=f'chonga 2|{query}|{user_id}'), 
-                InlineKeyboardButton(text="🗑 Close", callback_data=f"ppcl2 smex|{user_id}") ,
-                InlineKeyboardButton(text=">>", callback_data=f'chonga 2|{query}|{user_id}')             
+                InlineKeyboardButton(text="⩹", callback_data=f'chonga 2|{query}|{user_id}'), 
+                InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data=f"ppcl2 smex|{user_id}") ,
+                InlineKeyboardButton(text="⩺", callback_data=f'chonga 2|{query}|{user_id}')             
             ],
         ]
     return buttons   
@@ -446,19 +446,19 @@ def search_markup(ID1, ID2, ID3, ID4, ID5, duration1, duration2, duration3, dura
 def search_markup2(ID6, ID7, ID8, ID9, ID10, duration6, duration7, duration8, duration9, duration10 ,user_id, query):
     buttons= [
             [
-                InlineKeyboardButton(text="⁶", callback_data=f'beta {ID6}|{duration6}|{user_id}'),
-                InlineKeyboardButton(text="⁷", callback_data=f'beta {ID7}|{duration7}|{user_id}'),
-                InlineKeyboardButton(text="⁸", callback_data=f'beta {ID8}|{duration8}|{user_id}')
+                InlineKeyboardButton(text="➏", callback_data=f'beta {ID6}|{duration6}|{user_id}'),
+                InlineKeyboardButton(text="➐", callback_data=f'beta {ID7}|{duration7}|{user_id}'),
+                InlineKeyboardButton(text="➑", callback_data=f'beta {ID8}|{duration8}|{user_id}')
             ],
             [ 
-                InlineKeyboardButton(text="⁹", callback_data=f'beta {ID9}|{duration9}|{user_id}'),
-                InlineKeyboardButton(text="¹⁰", callback_data=f'beta {ID10}|{duration10}|{user_id}')
+                InlineKeyboardButton(text="➒", callback_data=f'beta {ID9}|{duration9}|{user_id}'),
+                InlineKeyboardButton(text="➓", callback_data=f'beta {ID10}|{duration10}|{user_id}')
             ],
             [ 
                 
-                InlineKeyboardButton(text="<<", callback_data=f'chonga 2|{query}|{user_id}'), 
-                InlineKeyboardButton(text="🗑 Close", callback_data=f"ppcl2 smex|{user_id}") ,
-                InlineKeyboardButton(text=">>", callback_data=f'chonga 2|{query}|{user_id}')             
+                InlineKeyboardButton(text="⩹", callback_data=f'chonga 2|{query}|{user_id}'), 
+                InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data=f"ppcl2 smex|{user_id}") ,
+                InlineKeyboardButton(text="⩺", callback_data=f'chonga 2|{query}|{user_id}')             
             ],
         ]
     return buttons     
@@ -470,7 +470,7 @@ def gets(videoid, user_id):
                 InlineKeyboardButton(text="➷ Get Video", callback_data=f'gets video|{videoid}|{user_id}')
             ],
             [
-                InlineKeyboardButton(text="🗑 Close Menu", callback_data=f'close2')
+                InlineKeyboardButton(text="ᴛᴜᴛᴜᴘ", callback_data=f'close2')
             ],
         ]
     return buttons

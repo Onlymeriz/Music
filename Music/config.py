@@ -23,3 +23,7 @@ GROUP = getenv("GROUP", "kynansupport")
 CHANNEL = getenv("CHANNEL", "kontenfilm")
 AUTO_LEAVE = int(getenv("AUTO_LEAVE", "1500"))
 MUST_JOIN = getenv("MUST_JOIN", "kontenfilm")
+YOUTUBE_IMG_URL = getenv(
+    "YOUTUBE_IMG_URL",
+    "cache/audio.png",
+)

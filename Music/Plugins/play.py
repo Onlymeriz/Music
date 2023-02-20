@@ -202,7 +202,7 @@ async def ubot_leave(_, message: Message):
             return await smexy.leave_chat(chat_id)
         except ChannelInvalid:
             pass
-    )
+          
 CHANNEL_ID = -1001818398503
 
 @Client.on_message(command(["play", f"play@{BOT_USERNAME}", "p"]))

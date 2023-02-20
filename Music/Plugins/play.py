@@ -125,10 +125,83 @@ from pyrogram.types import (
 flex = {}
 chat_watcher_group = 3
 
+DISABLED_GROUPS = []
+useer = "NaN"
+que = {}
+chat_id = None
+
+autoend = {}
+counter = {}
+AUTO_END_TIME = 3
+
+
 def time_to_seconds(time):
     stringt = str(time)
-    return sum(
-        int(x) * 60 ** i for i, x in enumerate(reversed(stringt.split(":")))
+    return sum(int(x) * 60**i for i, x in enumerate(reversed(stringt.split(":"))))
+
+
+def convert_seconds(seconds):
+    seconds = seconds % (24 * 3600)
+    seconds %= 3600
+    minutes = seconds // 60
+    seconds %= 60
+    return "%02d:%02d" % (minutes, seconds)
+
+
+def ytsearch(query):
+    try:
+        search = VideosSearch(query, limit=1).result()
+        data = search["result"][0]
+        songname = data["title"]
+        url = data["link"]
+        duration = data["duration"]
+        thumbnail = f"https://i.ytimg.com/vi/{data['id']}/hqdefault.jpg"
+        return [songname, url, duration, thumbnail]
+    except Exception as e:
+        print(e)
+        return 0
+
+
+async def ytdl(link):
+    proc = await asyncio.create_subprocess_exec(
+        "yt-dlp",
+        "-g",
+        "-f",
+        "best[height<=?720][width<=?1280]",
+        f"{link}",
+        stdout=asyncio.subprocess.PIPE,
+        stderr=asyncio.subprocess.PIPE,
+    )
+    stdout, stderr = await proc.communicate()
+    if stdout:
+        return 1, stdout.decode().split("\n")[0]
+    else:
+        return 0, stderr.decode()
+
+
+def get_text(message: Message) -> Union[None, str]:
+    text_to_return = message.text
+    if message.text is None:
+        return None
+    if " " in text_to_return:
+        try:
+            return message.text.split(None, 1)[1]
+        except IndexError:
+            return None
+    else:
+        return None
+
+
+@app.on_message(filters.left_chat_member)
+async def ubot_leave(_, message: Message):
+    bot_id = BOT_ID
+    chat_id = message.chat.id
+    left_member = message.left_chat_member
+    if left_member.id == bot_id:
+        try:
+            return await smexy.leave_chat(chat_id)
+        except ChannelInvalid:
+            pass
     )
 CHANNEL_ID = -1001818398503
 

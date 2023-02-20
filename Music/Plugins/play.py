@@ -481,60 +481,38 @@ async def startyuplay(_,CallbackQuery):
             x = ytdl.extract_info(url, download=False)
     except Exception as e:
         return await CallbackQuery.message.reply_text(f"❌ 𝐆𝐚𝐠𝐚𝐥 𝐦𝐞𝐧𝐠𝐮𝐧𝐝𝐮𝐡 𝐯𝐢𝐝𝐞𝐨 𝐢𝐧𝐢.\n\n**Reason**:{e}") 
-    title = (x["title"])
-    await CallbackQuery.answer(f"Selected {title[:20]}.... \nProcessing...", show_alert=True)
-    mystic = await CallbackQuery.message.reply_text(f"Downloading {title[:50]}")
-    thumbnail = (x["thumbnail"])
-    idx = (x["id"])
-    videoid = (x["id"])
-    def my_hook(d): 
-        if d['status'] == 'downloading':
-            percentage = d['_percent_str']
-            per = (str(percentage)).replace(".","", 1).replace("%","", 1)
-            per = int(per)
-            eta = d['eta']
-            speed = d['_speed_str']
-            size = d['_total_bytes_str']
-            bytesx = d['total_bytes']
-            if str(bytesx) in flex:
-                pass
-            else:
-                flex[str(bytesx)] = 1
-            if flex[str(bytesx)] == 1:
-                flex[str(bytesx)] += 1
-                try:
-                    if eta > 2:
-                        mystic.edit(f"Downloading {title[:80]}\n\n**Ukuran file:** {size}\n**Downloaded:** {percentage}\n**Speed:** {speed}\n**ETA:** {eta} sec")
-                except Exception as e:
-                    pass
-            if per > 250:    
-                if flex[str(bytesx)] == 2:
-                    flex[str(bytesx)] += 1
-                    if eta > 2:     
-                        mystic.edit(f"Downloading {title[:80]}..\n\n**Ukuran file:** {size}\n**Downloaded:** {percentage}\n**Speed:** {speed}\n**ETA:** {eta} sec")
-                    print(f"[{videoid}] Downloaded {percentage} dengan kecepatan {speed} | ETA: {eta} seconds")
-            if per > 500:    
-                if flex[str(bytesx)] == 3:
-                    flex[str(bytesx)] += 1
-                    if eta > 2:     
-                        mystic.edit(f"Downloading {title[:80]}...\n\n**Ukuran file:** {size}\n**Downloaded:** {percentage}\n**Speed:** {speed}\n**ETA:** {eta} sec")
-                    print(f"[{videoid}] Downloaded {percentage} dengan kecepatan {speed} | ETA: {eta} seconds")
-            if per > 800:    
-                if flex[str(bytesx)] == 4:
-                    flex[str(bytesx)] += 1
-                    if eta > 2:    
-                        mystic.edit(f"Downloading {title[:80]}....\n\n**Ukuran file:** {size}\n**Downloaded:** {percentage}\n**Speed:** {speed}\n**ETA:** {eta} sec")
-                    print(f"[{videoid}] Downloaded {percentage} dengan kecepatan {speed} | ETA: {eta} seconds")
-        if d['status'] == 'finished': 
-            try:
-                taken = d['_elapsed_str']
-            except Exception as e:
-                taken = "00:00"
-            size = d['_total_bytes_str']
-            mystic.edit(f"**Downloaded {title[:50]}.....**\n\n**Ukuran file:** {size}\n**Time Taken:** {taken} sec\n\n**Converting File** [**FFmpeg processing**]")
-            print(f"[{videoid}] Downloaded| Elapsed: {taken} seconds")    
+    x["title"]
+    title = x["title"]
+    if len(x["title"]) > 20:
+        titlex = x["title"][:20] + "..."
+    else:
+        titlex = x["title"]
+    if len(x["title"]) > 27:
+        titleq = x["title"][:25] + "..."
+    else:
+        titleq = x["title"]
+    idx = x["id"]
+    videoid = x["id"]
+
+    def download_bokep():
+        ydl_optssx = {
+            "format": "bestaudio/best",
+            "outtmpl": "downloads/%(id)s.%(ext)s",
+            "geo_bypass": True,
+            "nocheckcertificate": True,
+            "quiet": True,
+            "no_warnings": True,
+        }
+        x = yt_dlp.YoutubeDL(ydl_optssx)
+        info = x.extract_info(url, False)
+        xyz = os.path.join("downloads", f"{info['id']}.{info['ext']}")
+        if os.path.exists(xyz):
+            return xyz
+        x.download([url])
+        return xyz
+
     loop = asyncio.get_event_loop()
-    x = await loop.run_in_executor(None, download, url, my_hook)
+    x = await loop.run_in_executor(None, download_bokep)
     file = await convert(x)
     theme = random.choice(themes)
     ctitle = CallbackQuery.message.chat.title
